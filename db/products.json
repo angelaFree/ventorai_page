@@ -1,0 +1,18 @@
+{
+  "data": {
+    "DATA_PAIS": [
+      {
+        "codigo-pais": "US",
+        "moneda": "dolares",
+        "signo-moneda": "$",
+        "metodos-logos": ""
+      },
+      {
+        "codigo-pais": "PE",
+        "moneda": "soles",
+        "signo-moneda": "S/",
+        "metodos-logos": ""
+      }
+    ]
+  }
+}

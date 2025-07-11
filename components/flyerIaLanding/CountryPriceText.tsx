@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import PropTypes from "prop-types";
+import getCountryData from "@/utils/getCountryData";
 
 interface CountryPriceTextProps {
   prices: number | Record<string, number>;
@@ -19,7 +19,7 @@ export default function CountryPriceText({ prices }: CountryPriceTextProps) {
         const countryCode = result.country || "US";
 
         // Obtiene datos del país
-        const countryInfo = getCountryData(countryCode);
+        const countryInfo = getCountryData(countryCode) as any;
         const symbolLocal = countryInfo["signo-moneda"] || "$";
         const currencyLocal = countryInfo.moneda || "USD";
 
@@ -63,9 +63,3 @@ export default function CountryPriceText({ prices }: CountryPriceTextProps) {
   );
 }
 
-CountryPriceText.propTypes = {
-  prices: PropTypes.oneOfType([
-    PropTypes.number,
-    PropTypes.objectOf(PropTypes.number),
-  ]).isRequired,
-};

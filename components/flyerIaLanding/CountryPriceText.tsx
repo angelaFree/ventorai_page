@@ -14,9 +14,13 @@ export default function CountryPriceText({ prices }: CountryPriceTextProps) {
   useEffect(() => {
     async function fetchAndSet() {
       try {
-        const response = await fetch("/api/country");
-        const result = await response.json();
-        const countryCode = result.country || "US";
+        let countryCode = sessionStorage.getItem("countryCode");
+        if (!countryCode) {
+          const response = await fetch("/api/country");
+          const result = await response.json();
+          countryCode = result.country || "US";
+          sessionStorage.setItem("countryCode", countryCode);
+        }
 
         // Obtiene datos del país
         const countryInfo = getCountryData(countryCode) as any;
@@ -49,7 +53,7 @@ export default function CountryPriceText({ prices }: CountryPriceTextProps) {
       }
     }
     fetchAndSet();
-  }, [prices]);
+  }, []);
 
   if (priceValue === null) {
     return null;

@@ -19,18 +19,20 @@ export default function CountryPriceText({ prices }: CountryPriceTextProps) {
           const response = await fetch("/api/country");
           const result = await response.json();
           countryCode = result.country || "US";
-          sessionStorage.setItem("countryCode", countryCode);
+          sessionStorage.setItem("countryCode", countryCode as string);
         }
 
+        const code = countryCode || "US";
+
         // Obtiene datos del país
-        const countryInfo = getCountryData(countryCode) as any;
+        const countryInfo = getCountryData(code) as any;
         const symbolLocal = countryInfo["signo-moneda"] || "$";
         const currencyLocal = countryInfo.moneda || "USD";
 
         // Determina precio
         const raw =
           typeof prices === "object"
-            ? prices[countryCode] ?? prices.US ?? 0
+            ? prices[code] ?? prices.US ?? 0
             : prices;
         // Si raw es string lo parseamos, si no lo dejamos
         const num = typeof raw === "string" ? parseFloat(raw) : raw;

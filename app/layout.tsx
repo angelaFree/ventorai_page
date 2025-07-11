@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://ventorai.com"),
+  metadataBase: new URL("https://ventorai.freeinfoproducts.com/"),
   title: {
     default: "FlyerAI - Create Viral Flyers Instantly",
     template: "%s | FlyerAI",
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     title: "FlyerAI - Create Viral Flyers Instantly",
     description:
       "Create viral flyers effortlessly. Always up-to-date templates optimized for any industry.",
-    url: "https://ventorai.com",
+    url: "https://ventorai.freeinfoproducts.com/",
     siteName: "Ventor AI",
     images: [
       {
@@ -47,10 +47,10 @@ export const metadata: Metadata = {
     type: "website",
   },
   alternates: {
-    canonical: "https://ventorai.com",
+    canonical: "https://ventorai.freeinfoproducts.com/",
     languages: {
-      "en-US": "https://ventorai.com",
-      "es-ES": "https://ventorai.com/es",
+      "en-US": "https://ventorai.freeinfoproducts.com/",
+      "es-ES": "https://ventorai.freeinfoproducts.com/",
     },
   },
   robots: {

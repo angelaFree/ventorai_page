@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://ventorai.com
+
+# Sitemaps
+Sitemap: https://ventorai.com/sitemap.xml

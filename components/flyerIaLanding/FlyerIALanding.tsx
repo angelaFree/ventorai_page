@@ -1390,14 +1390,14 @@ export default function FlyerIALanding() {
       avatar: "/avatar_maria.png",
     },
     {
-      text: "Increíble cómo FlyerIA captura las tendencias virales. Mis conversiones subieron 300%.",
+      text: "Increíble cómo FlyerAI captura las tendencias virales. Mis conversiones subieron 300%.",
       author: "Carlos Ruiz",
       role: "E-commerce Owner",
       rating: 5,
       avatar: "/avatar_carlos.png",
     },
     {
-      text: "Adiós Canva, adiós diseñadores caros. FlyerIA es todo lo que necesito.",
+      text: "Adiós Canva, adiós diseñadores caros. FlyerAI es todo lo que necesito.",
       author: "Ana Martínez",
       role: "Social Media Specialist",
       rating: 5,
@@ -1712,7 +1712,7 @@ export default function FlyerIALanding() {
               </div>
 
               <h1 className="text-5xl md:text-7xl font-black mb-6 bg-gradient-to-r from-yellow-300 to-white bg-clip-text text-transparent leading-tight">
-                Crea Flyers Virales en Segundos con FlyerIA
+                Crea Flyers Virales en Segundos con FlyerAI
               </h1>
 
               <p className="text-xl md:text-2xl mb-8 text-cyan-100 max-w-3xl mx-auto leading-relaxed">
@@ -1826,7 +1826,7 @@ export default function FlyerIALanding() {
                 Flyers Que Están Arrasando
               </h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                Diseños virales creados con FlyerIA que están generando miles de
+                Diseños virales creados con FlyerAI que están generando miles de
                 conversiones
               </p>
             </div>
@@ -1844,7 +1844,7 @@ export default function FlyerIALanding() {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
               <h2 className="text-4xl md:text-5xl font-black text-white mb-8">
-                Ve FlyerIA en Acción
+                Ve FlyerAI en Acción
               </h2>
               <p className="text-xl text-purple-100 mb-12">
                 Descubre cómo crear flyers virales en menos de 30 segundos

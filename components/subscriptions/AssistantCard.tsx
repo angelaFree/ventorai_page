@@ -7,11 +7,6 @@ export interface Badge {
   gradient: string;
 }
 
-export interface Result {
-  value: string;
-  label: string;
-  color: string;
-}
 
 export interface Highlight {
   text: string;
@@ -28,7 +23,6 @@ export interface AssistantCardProps {
   featureBg: string; // gradient classes for features box
   bulletColor: string; // color class for bullet dot
   features: string[];
-  results: Result[];
   highlight?: Highlight;
   reverse?: boolean;
   children: ReactNode; // graphic content
@@ -44,7 +38,6 @@ export default function AssistantCard({
   featureBg,
   bulletColor,
   features,
-  results,
   highlight,
   reverse,
   children,
@@ -90,17 +83,6 @@ export default function AssistantCard({
           </ul>
         </div>
 
-        <div className="bg-white rounded-2xl p-6 shadow-lg">
-          <h4 className="font-bold text-gray-800 mb-3">📊 Resultados que Produce:</h4>
-          <div className="grid grid-cols-2 gap-4">
-            {results.map((r) => (
-              <div key={r.label} className="text-center">
-                <div className={`text-2xl font-black ${r.color}`}>{r.value}</div>
-                <div className="text-sm text-gray-600">{r.label}</div>
-              </div>
-            ))}
-          </div>
-        </div>
       </div>
 
       <div className={graphicOrder}>

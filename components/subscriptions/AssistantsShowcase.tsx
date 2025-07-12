@@ -29,7 +29,6 @@ export default function AssistantsShowcase() {
               featureBg={item.featureBg}
               bulletColor={item.bulletColor}
               features={item.features}
-              results={item.results}
               highlight={item.highlight}
               reverse={item.reverse}
             >

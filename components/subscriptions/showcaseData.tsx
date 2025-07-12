@@ -28,7 +28,7 @@ export const showcaseItems: ShowcaseItem[] = [
       { label: "PRO", gradient: "from-pink-400 to-cyan-400" },
       { label: "PLUS", gradient: "from-cyan-400 to-purple-400" },
     ],
-    featureBg: "from-orange-300 to-pink-300",
+    featureBg: "from-orange-500 to-pink-500",
     bulletColor: "text-orange-500",
     features: [
       "Genera diseños basados en anuncios virales",
@@ -49,7 +49,7 @@ export const showcaseItems: ShowcaseItem[] = [
       { label: "PRO", gradient: "from-pink-400 to-cyan-400" },
       { label: "PLUS", gradient: "from-cyan-400 to-purple-400" },
     ],
-    featureBg: "from-purple-300 to-blue-300",
+    featureBg: "from-purple-500 to-blue-500",
     bulletColor: "text-purple-500",
     features: [
       "Genera 5 títulos o enfoques ganadores",
@@ -72,7 +72,7 @@ export const showcaseItems: ShowcaseItem[] = [
       { label: "PRO", gradient: "from-pink-400 to-cyan-400" },
       { label: "PLUS", gradient: "from-cyan-400 to-purple-400" },
     ],
-    featureBg: "from-green-300 to-cyan-300",
+    featureBg: "from-green-500 to-cyan-500",
     bulletColor: "text-green-500",
     features: [
       "Genera copys listos para publicar",
@@ -90,7 +90,7 @@ export const showcaseItems: ShowcaseItem[] = [
     tagline: "Analizador de Face Ads",
     taglineColor: "text-red-500",
     badges: [{ label: "PLUS", gradient: "from-cyan-400 to-purple-400" }],
-    featureBg: "from-red-300 to-orange-300",
+    featureBg: "from-red-500 to-orange-500",
     bulletColor: "text-red-500",
     features: [
       "Analiza conjuntos de anuncios",
@@ -109,7 +109,7 @@ export const showcaseItems: ShowcaseItem[] = [
     tagline: "Maestro del Email Marketing",
     taglineColor: "text-indigo-500",
     badges: [{ label: "PLUS", gradient: "from-cyan-400 to-purple-400" }],
-    featureBg: "from-indigo-300 to-purple-300",
+    featureBg: "from-indigo-500 to-purple-500",
     bulletColor: "text-indigo-500",
     features: [
       "Analiza secuencias de email con mayor conversión",

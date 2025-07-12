@@ -14,7 +14,7 @@ export interface Highlight {
 }
 
 export interface AssistantCardProps {
-  icon: ReactNode;
+  iconSrc: string; // path to the avatar image
   iconGradient: string; // from-orange-400 to-pink-400
   name: string;
   tagline: string;
@@ -25,11 +25,11 @@ export interface AssistantCardProps {
   features: string[];
   highlight?: Highlight;
   reverse?: boolean;
-  children: ReactNode; // graphic content
+  graphicSrc: string; // square image representing the assistant
 }
 
 export default function AssistantCard({
-  icon,
+  iconSrc,
   iconGradient,
   name,
   tagline,
@@ -40,7 +40,7 @@ export default function AssistantCard({
   features,
   highlight,
   reverse,
-  children,
+  graphicSrc,
 }: AssistantCardProps) {
   const textOrder = reverse ? "" : "order-2 lg:order-1";
   const graphicOrder = reverse ? "" : "order-1 lg:order-2";
@@ -49,9 +49,9 @@ export default function AssistantCard({
       <div className={textOrder}>
         <div className="flex items-center mb-6">
           <div
-            className={`w-20 h-20 bg-gradient-to-r ${iconGradient} rounded-full flex items-center justify-center text-3xl mr-6 shadow-lg`}
+            className={`w-20 h-20 bg-gradient-to-r ${iconGradient} rounded-full flex items-center justify-center mr-6 shadow-lg`}
           >
-            {icon}
+            <img src={iconSrc} alt={name} className="w-10 h-10 object-contain" />
           </div>
           <div>
             <h3 className="text-3xl font-black text-gray-800">{name}</h3>
@@ -87,7 +87,11 @@ export default function AssistantCard({
 
       <div className={graphicOrder}>
         <div className="relative">
-          {children}
+          <div
+            className={`bg-gradient-to-br ${iconGradient} rounded-3xl p-8 shadow-2xl flex justify-center`}
+          >
+            <img src={graphicSrc} alt={name} className="w-40 h-40 object-contain" />
+          </div>
           {highlight && (
             <div className={`absolute -top-4 -right-4 px-4 py-2 rounded-full text-sm font-bold ${highlight.classes}`}> 
               {highlight.text}

@@ -20,7 +20,7 @@ export default function AssistantsShowcase() {
           {showcaseItems.map((item) => (
             <AssistantCard
               key={item.id}
-              icon={item.icon}
+              iconSrc={item.iconSrc}
               iconGradient={item.iconGradient}
               name={item.name}
               tagline={item.tagline}
@@ -31,9 +31,8 @@ export default function AssistantsShowcase() {
               features={item.features}
               highlight={item.highlight}
               reverse={item.reverse}
-            >
-              {item.graphic}
-            </AssistantCard>
+              graphicSrc={item.graphicSrc}
+            />
           ))}
         </div>
 

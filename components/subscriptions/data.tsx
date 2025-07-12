@@ -1,8 +1,6 @@
-import { ReactNode } from "react";
-
 export interface Assistant {
   name: string;
-  icon: ReactNode;
+  iconSrc: string;
   description: string;
   features: string[];
 }
@@ -17,7 +15,7 @@ export interface Plan {
 export const assistantsData: Record<string, Assistant> = {
   flyerAI: {
     name: "Flyer AI",
-    icon: <span>🎨</span>,
+    iconSrc: "/avatar_maria.png",
     description: "Asistente Generador de Flyers",
     features: [
       "Genera flyers listos para vender",
@@ -27,7 +25,7 @@ export const assistantsData: Record<string, Assistant> = {
   },
   angulAI: {
     name: "Angul AI",
-    icon: <span>🎯</span>,
+    iconSrc: "/avatar_ana.png",
     description: "Asistente de Ángulos de Venta",
     features: [
       "Analiza tu producto o servicio",
@@ -37,7 +35,7 @@ export const assistantsData: Record<string, Assistant> = {
   },
   copyAI: {
     name: "Copy AI",
-    icon: <span>✍️</span>,
+    iconSrc: "/avatar_carlos.png",
     description: "Asistente Generador de Copys",
     features: [
       "Redacta copys listos para publicar",
@@ -47,7 +45,7 @@ export const assistantsData: Record<string, Assistant> = {
   },
   faceAI: {
     name: "Face AI",
-    icon: <span>📊</span>,
+    iconSrc: "/avatar_ana.png",
     description: "Asistente de Facebook Ads",
     features: [
       "Analiza conjuntos de anuncios",

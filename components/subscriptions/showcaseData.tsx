@@ -1,9 +1,8 @@
-import { ReactNode } from "react";
 import { Badge, Highlight } from "./AssistantCard";
 
 export interface ShowcaseItem {
   id: string;
-  icon: ReactNode;
+  iconSrc: string;
   iconGradient: string;
   name: string;
   tagline: string;
@@ -14,13 +13,13 @@ export interface ShowcaseItem {
   features: string[];
   highlight?: Highlight;
   reverse?: boolean;
-  graphic: ReactNode;
+  graphicSrc: string;
 }
 
 export const showcaseItems: ShowcaseItem[] = [
   {
     id: "flyer",
-    icon: <span>🎨</span>,
+    iconSrc: "/avatar_maria.png",
     iconGradient: "from-orange-400 to-pink-400",
     name: "Flyer AI",
     tagline: "Generador de Flyers",
@@ -37,15 +36,11 @@ export const showcaseItems: ShowcaseItem[] = [
       "Optimiza cada pieza para tu nicho",
     ],
     highlight: { text: "PRO / PLUS", classes: "bg-yellow-400 text-black" },
-    graphic: (
-      <div className="bg-gradient-to-br from-orange-400 to-pink-400 rounded-3xl p-8 shadow-2xl flex justify-center">
-        <img src="/window.svg" alt="Flyer AI" className="w-40 h-40 object-contain" />
-      </div>
-    ),
+    graphicSrc: "/window.svg",
   },
   {
     id: "angul",
-    icon: <span>🎬</span>,
+    iconSrc: "/avatar_ana.png",
     iconGradient: "from-purple-400 to-blue-400",
     name: "Angul AI",
     tagline: "Estratega de Ventas",
@@ -63,15 +58,11 @@ export const showcaseItems: ShowcaseItem[] = [
     ],
     highlight: { text: "PRO / PLUS", classes: "bg-green-400 text-black" },
     reverse: true,
-    graphic: (
-      <div className="bg-gradient-to-br from-purple-400 to-blue-400 rounded-3xl p-8 shadow-2xl flex justify-center">
-        <img src="/globe.svg" alt="Angul AI" className="w-40 h-40 object-contain" />
-      </div>
-    ),
+    graphicSrc: "/globe.svg",
   },
   {
     id: "copy",
-    icon: <span>✍️</span>,
+    iconSrc: "/avatar_carlos.png",
     iconGradient: "from-green-400 to-cyan-400",
     name: "Copy AI",
     tagline: "Generador de Copys",
@@ -89,15 +80,11 @@ export const showcaseItems: ShowcaseItem[] = [
       "Adapta el tono a cada red social",
     ],
     highlight: { text: "BASIC / PRO / PLUS", classes: "bg-pink-400 text-white" },
-    graphic: (
-      <div className="bg-gradient-to-br from-green-400 to-cyan-400 rounded-3xl p-8 shadow-2xl flex justify-center">
-        <img src="/file.svg" alt="Copy AI" className="w-40 h-40 object-contain" />
-      </div>
-    ),
+    graphicSrc: "/file.svg",
   },
   {
     id: "face",
-    icon: <span>📊</span>,
+    iconSrc: "/avatar_ana.png",
     iconGradient: "from-red-400 to-orange-400",
     name: "Face AI",
     tagline: "Analizador de Face Ads",
@@ -112,15 +99,11 @@ export const showcaseItems: ShowcaseItem[] = [
     ],
     highlight: { text: "PLUS", classes: "bg-green-400 text-black" },
     reverse: true,
-    graphic: (
-      <div className="bg-gradient-to-br from-red-400 to-orange-400 rounded-3xl p-8 shadow-2xl flex justify-center">
-        <img src="/next.svg" alt="Face AI" className="w-40 h-40 object-contain" />
-      </div>
-    ),
+    graphicSrc: "/next.svg",
   },
   {
     id: "email",
-    icon: <span>📧</span>,
+    iconSrc: "/avatar_maria.png",
     iconGradient: "from-indigo-400 to-purple-400",
     name: "Email AI",
     tagline: "Maestro del Email Marketing",
@@ -134,11 +117,7 @@ export const showcaseItems: ShowcaseItem[] = [
       "Optimiza timing y frecuencia de envíos",
     ],
     highlight: { text: "PLUS", classes: "bg-cyan-400 text-black" },
-    graphic: (
-      <div className="bg-gradient-to-br from-indigo-400 to-purple-400 rounded-3xl p-8 shadow-2xl flex justify-center">
-        <img src="/vercel.svg" alt="Email AI" className="w-40 h-40 object-contain" />
-      </div>
-    ),
+    graphicSrc: "/vercel.svg",
   },
 ];
 

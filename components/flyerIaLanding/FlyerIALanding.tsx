@@ -1658,13 +1658,53 @@ export default function FlyerIALanding() {
       <path d="m19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.29 1.51 4.04 3 5.5l7 7Z" />
     </svg>
   );
-  const priceMap = {
+  // Precios por plan y país
+  const priceMapBasic = {
     US: 6.9,
     PE: 27.0,
     MX: 162.9,
     CO: 29.73,
     BO: 52.0,
   };
+
+  const factorPro = 8.9 / 6.9;
+  const factorPlus = 11.9 / 6.9;
+
+  const priceMapPro = Object.fromEntries(
+    Object.entries(priceMapBasic).map(([k, v]) => [k, +(v * factorPro).toFixed(2)])
+  );
+  const priceMapPlus = Object.fromEntries(
+    Object.entries(priceMapBasic).map(([k, v]) => [k, +(v * factorPlus).toFixed(2)])
+  );
+
+  // Cambia este valor para mostrar otro plan
+  let selectedPlan: "BASIC" | "PRO" | "PLUS" = "BASIC";
+
+  const priceMap = {
+    BASIC: priceMapBasic,
+    PRO: priceMapPro,
+    PLUS: priceMapPlus,
+  }[selectedPlan];
+
+  const planFeatures = {
+    BASIC: [
+      "Asistente de Flyers (FlyerIA)",
+      "Diseño automático con IA",
+      "Soporte estándar",
+    ],
+    PRO: [
+      "Todo en BASIC",
+      "Asistente de Copys (CopyIA)",
+      "Asistente de Ángulos de Venta (Angulia)",
+    ],
+    PLUS: [
+      "Todo en PRO",
+      "Asistente Analizador de Campañas (Fadsia)",
+      "Modelos de IA más recientes",
+    ],
+  } as const;
+
+  const features = planFeatures[selectedPlan];
   return (
     <>
       <style jsx>{`
@@ -1708,16 +1748,15 @@ export default function FlyerIALanding() {
             <div className="mx-auto max-w-4xl">
               <div className="inline-flex items-center rounded-full bg-yellow-400 text-black hover:bg-yellow-300 text-lg px-6 py-2 mb-6 font-medium">
                 <SparklesIcon />
-                <span className="ml-2">¡Nuevo! IA Generativa para Flyers</span>
+                <span className="ml-2">Nuevo Ecosistema de Asistentes IA</span>
               </div>
 
               <h1 className="text-5xl md:text-7xl font-black mb-6 bg-gradient-to-r from-yellow-300 to-white bg-clip-text text-transparent leading-tight">
-                Crea Flyers Virales en Segundos con FlyerAI
+                Impulsa tus ventas con FREE IA
               </h1>
 
               <p className="text-xl md:text-2xl mb-8 text-cyan-100 max-w-3xl mx-auto leading-relaxed">
-                Olvídate de Canva y diseñadores: genera tus diseños a partir de
-                los anuncios más exitosos en Facebook Ads Library.
+                Accede a FlyerIA, CopyIA, Angulia y Fadsia para crear campañas completas en segundos.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
@@ -1728,7 +1767,7 @@ export default function FlyerIALanding() {
                 >
                   <RocketIcon />
                   <span className="ml-3">
-                    Comprar por <CountryPriceText prices={priceMap} />
+                    Comprar {selectedPlan} por <CountryPriceText prices={priceMap} />
                   </span>
                 </button>
 
@@ -1936,12 +1975,9 @@ export default function FlyerIALanding() {
                 <div className="w-24 h-24 bg-gradient-to-r from-orange-500 to-pink-500 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
                   <span className="text-3xl font-black text-white">1</span>
                 </div>
-                <h3 className="text-2xl font-bold text-gray-800 mb-4">
-                  Conexión Automática
-                </h3>
+                <h3 className="text-2xl font-bold text-gray-800 mb-4">Fadsia</h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Nos conectamos a Facebook Ads Library, Google Trends y TikTok
-                  Ads Library, basándonos en indicadores.{" "}
+                  Analiza tus anuncios y detecta oportunidades para mejorar tu ROAS.
                 </p>
               </div>
 
@@ -1949,12 +1985,9 @@ export default function FlyerIALanding() {
                 <div className="w-24 h-24 bg-gradient-to-r from-pink-500 to-cyan-500 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
                   <span className="text-3xl font-black text-white">2</span>
                 </div>
-                <h3 className="text-2xl font-bold text-gray-800 mb-4">
-                  Extracción de Patrones
-                </h3>
+                <h3 className="text-2xl font-bold text-gray-800 mb-4">Angulia</h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Nuestra IA identifica los elementos visuales, colores,
-                  tipografías y layouts que generan más conversiones.
+                  Encuentra los mejores ángulos de venta para tu producto o servicio.
                 </p>
               </div>
 
@@ -1962,12 +1995,9 @@ export default function FlyerIALanding() {
                 <div className="w-24 h-24 bg-gradient-to-r from-cyan-500 to-purple-500 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
                   <span className="text-3xl font-black text-white">3</span>
                 </div>
-                <h3 className="text-2xl font-bold text-gray-800 mb-4">
-                  Generación Instantánea
-                </h3>
+                <h3 className="text-2xl font-bold text-gray-800 mb-4">CopyIA & FlyerIA</h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Describes tu producto o servicio y obtienes flyers
-                  personalizados basados en los patrones más exitosos.
+                  Genera copys y diseños impactantes listos para publicar en segundos.
                 </p>
               </div>
             </div>
@@ -2046,7 +2076,7 @@ export default function FlyerIALanding() {
           <div className="container mx-auto px-4 text-center">
             <div className="max-w-4xl mx-auto">
               <h2 className="text-5xl md:text-6xl font-black mb-8">
-                Solo <CountryPriceText prices={priceMap} />
+                Plan {selectedPlan} por <CountryPriceText prices={priceMap} />
               </h2>
 
               <div className="bg-white/10 backdrop-blur-sm rounded-3xl p-8 mb-12">
@@ -2054,40 +2084,12 @@ export default function FlyerIALanding() {
                   <div>
                     <h3 className="text-3xl font-bold mb-6">Lo Que Incluye:</h3>
                     <div className="space-y-4 text-left">
-                      <div className="flex items-center">
-                        <CheckCircleIcon />
-                        <span className="text-lg ml-3">Flyers ilimitados</span>
-                      </div>
-                      <div className="flex items-center">
-                        <CheckCircleIcon />
-                        <span className="text-lg ml-3">
-                          Actualizaciones semanales
-                        </span>
-                      </div>
-                      <div className="flex items-center">
-                        <CheckCircleIcon />
-                        <span className="text-lg ml-3">
-                          Nuevas plantillas cada semana
-                        </span>
-                      </div>
-                      <div className="flex items-center">
-                        <CheckCircleIcon />
-                        <span className="text-lg ml-3">
-                          Tutoriales y hacks exclusivos
-                        </span>
-                      </div>
-                      <div className="flex items-center">
-                        <CheckCircleIcon />
-                        <span className="text-lg ml-3">
-                          Manual de uso completo
-                        </span>
-                      </div>
-                      <div className="flex items-center">
-                        <CheckCircleIcon />
-                        <span className="text-lg ml-3">
-                          Soporte prioritario
-                        </span>
-                      </div>
+                      {features.map((feature, i) => (
+                        <div key={i} className="flex items-center">
+                          <CheckCircleIcon />
+                          <span className="text-lg ml-3">{feature}</span>
+                        </div>
+                      ))}
                     </div>
                   </div>
 
@@ -2134,7 +2136,7 @@ export default function FlyerIALanding() {
             onClick={() => window.open(linkPagoHotmart, "_blank")}
             className="bg-gradient-to-r from-orange-500 to-pink-500 hover:from-orange-600 hover:to-pink-600 text-white font-bold px-8 py-4 rounded-full shadow-2xl animate-pulse"
           >
-            Comprar por <CountryPriceText prices={priceMap} />
+            Comprar {selectedPlan} por <CountryPriceText prices={priceMap} />
           </button>
         </div>
       </div>

@@ -7,82 +7,94 @@ export interface Assistant {
   features: string[];
 }
 
+export interface Plan {
+  name: string;
+  priceMap: Record<string, number>;
+  color: string;
+  assistants: Assistant[];
+}
+
 export const assistantsData: Record<string, Assistant> = {
-  flyerIA: {
-    name: "FlyerIA",
+  flyerAI: {
+    name: "Flyer AI",
     icon: <span>🎨</span>,
-    description: "Especialista en Diseño Viral",
+    description: "Asistente Generador de Flyers",
     features: [
-      "Analiza millones de anuncios exitosos en Facebook Ads Library",
-      "Identifica patrones visuales que generan más conversiones",
-      "Adapta diseños a tu industria y audiencia específica",
+      "Genera flyers listos para vender",
+      "Actualiza diseños con plantillas semanales",
+      "Optimiza cada pieza para tu nicho",
     ],
   },
-  videoIA: {
-    name: "VideoIA",
-    icon: <span>🎬</span>,
-    description: "Creador de Contenido Viral",
+  angulAI: {
+    name: "Angul AI",
+    icon: <span>🎯</span>,
+    description: "Asistente de Ángulos de Venta",
     features: [
-      "Analiza videos virales de TikTok, Instagram y YouTube",
-      "Crea hooks irresistibles en los primeros 3 segundos",
-      "Estructura narrativas que mantienen la atención",
+      "Analiza tu producto o servicio",
+      "Genera 5 títulos o enfoques ganadores",
+      "Optimiza ganchos para tu audiencia",
     ],
   },
-  textIA: {
-    name: "TextIA",
+  copyAI: {
+    name: "Copy AI",
     icon: <span>✍️</span>,
-    description: "Copywriter Persuasivo",
+    description: "Asistente Generador de Copys",
     features: [
-      "Estudia posts con millones de interacciones",
-      "Aplica técnicas de copywriting probadas",
-      "Adapta el tono a cada red social y audiencia",
+      "Redacta copys listos para publicar",
+      "Aplica técnicas de persuasión",
+      "Adapta el tono a cada red social",
     ],
   },
-  adIA: {
-    name: "AdIA",
+  faceAI: {
+    name: "Face AI",
     icon: <span>📊</span>,
-    description: "Optimizador de Campañas",
+    description: "Asistente de Facebook Ads",
     features: [
-      "Monitorea tus campañas en tiempo real 24/7",
-      "Ajusta presupuestos automáticamente según performance",
-      "Identifica audiencias de alta conversión",
-    ],
-  },
-  emailIA: {
-    name: "EmailIA",
-    icon: <span>📧</span>,
-    description: "Maestro del Email Marketing",
-    features: [
-      "Analiza secuencias de email con mayor conversión",
-      "Personaliza mensajes según comportamiento del usuario",
-      "Optimiza timing y frecuencia de envíos",
+      "Analiza conjuntos de anuncios",
+      "Interpreta métricas clave",
+      "Recomienda acciones de optimización",
     ],
   },
 };
 
-export const plans = {
+const basePriceMap = {
+  US: 6.9,
+  PE: 27.0,
+  MX: 162.9,
+  CO: 29.73,
+  BO: 52.0,
+};
+
+const multiplyPriceMap = (ratio: number) => {
+  const result: Record<string, number> = {};
+  Object.entries(basePriceMap).forEach(([k, v]) => {
+    result[k] = parseFloat((v * ratio).toFixed(2));
+  });
+  return result;
+};
+
+export const plans: Record<string, Plan> = {
   basic: {
     name: "BASIC",
-    price: 19,
+    priceMap: basePriceMap,
     color: "from-green-400 to-cyan-400",
-    assistants: [assistantsData.textIA],
+    assistants: [assistantsData.copyAI],
   },
   pro: {
     name: "PRO",
-    price: 49,
+    priceMap: multiplyPriceMap(8.9 / 6.9),
     color: "from-orange-500 to-pink-500",
-    assistants: [assistantsData.flyerIA, assistantsData.videoIA, assistantsData.textIA],
+    assistants: [assistantsData.flyerAI, assistantsData.angulAI, assistantsData.copyAI],
   },
   plus: {
     name: "PLUS",
-    price: 99,
+    priceMap: multiplyPriceMap(11.9 / 6.9),
     color: "from-purple-500 to-blue-500",
     assistants: [
-      assistantsData.flyerIA,
-      assistantsData.videoIA,
-      assistantsData.textIA,
-      assistantsData.adIA,
-      assistantsData.emailIA,
+      assistantsData.flyerAI,
+      assistantsData.angulAI,
+      assistantsData.copyAI,
+      assistantsData.faceAI,
     ],
   },
 };

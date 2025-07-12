@@ -16,7 +16,7 @@ export default function AssistantsShowcase() {
         </div>
 
         <div className="space-y-16">
-          {/* FlyerIA */}
+          {/* Flyer AI */}
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1">
               <div className="flex items-center mb-6">
@@ -24,8 +24,8 @@ export default function AssistantsShowcase() {
                   🎨
                 </div>
                 <div>
-                  <h3 className="text-3xl font-black text-gray-800">FlyerIA</h3>
-                  <p className="text-orange-500 font-semibold">Especialista en Diseño Viral</p>
+                  <h3 className="text-3xl font-black text-gray-800">Flyer AI</h3>
+                  <p className="text-orange-500 font-semibold">Generador de Flyers</p>
                   <div className="flex gap-2 mt-2">
                     <span className="inline-flex items-center rounded-full bg-gradient-to-r from-pink-400 to-cyan-400 text-white px-3 py-1 text-xs font-bold">
                       PRO
@@ -42,15 +42,15 @@ export default function AssistantsShowcase() {
                 <ul className="space-y-2 text-gray-700">
                   <li className="flex items-start">
                     <span className="text-orange-500 mr-2">•</span>
-                    Analiza millones de anuncios exitosos en Facebook Ads Library
+                    Genera diseños basados en anuncios virales
                   </li>
                   <li className="flex items-start">
                     <span className="text-orange-500 mr-2">•</span>
-                    Identifica patrones visuales que generan más conversiones
+                    Actualiza plantillas cada semana
                   </li>
                   <li className="flex items-start">
                     <span className="text-orange-500 mr-2">•</span>
-                    Adapta diseños a tu industria y audiencia específica
+                    Optimiza cada pieza para tu nicho
                   </li>
                 </ul>
               </div>
@@ -93,7 +93,7 @@ export default function AssistantsShowcase() {
             </div>
           </div>
 
-          {/* VideoIA */}
+          {/* Angul AI */}
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <div className="relative">
@@ -123,8 +123,8 @@ export default function AssistantsShowcase() {
                   🎬
                 </div>
                 <div>
-                  <h3 className="text-3xl font-black text-gray-800">VideoIA</h3>
-                  <p className="text-purple-500 font-semibold">Creador de Contenido Viral</p>
+                  <h3 className="text-3xl font-black text-gray-800">Angul AI</h3>
+                  <p className="text-purple-500 font-semibold">Estratega de Ventas</p>
                   <div className="flex gap-2 mt-2">
                     <span className="inline-flex items-center rounded-full bg-gradient-to-r from-pink-400 to-cyan-400 text-white px-3 py-1 text-xs font-bold">
                       PRO
@@ -141,15 +141,15 @@ export default function AssistantsShowcase() {
                 <ul className="space-y-2 text-gray-700">
                   <li className="flex items-start">
                     <span className="text-purple-500 mr-2">•</span>
-                    Analiza videos virales de TikTok, Instagram y YouTube
+                    Genera 5 títulos o enfoques ganadores
                   </li>
                   <li className="flex items-start">
                     <span className="text-purple-500 mr-2">•</span>
-                    Crea hooks irresistibles en los primeros 3 segundos
+                    Analiza tu producto y audiencia
                   </li>
                   <li className="flex items-start">
                     <span className="text-purple-500 mr-2">•</span>
-                    Estructura narrativas que mantienen la atención
+                    Propone ganchos persuasivos
                   </li>
                 </ul>
               </div>
@@ -170,7 +170,7 @@ export default function AssistantsShowcase() {
             </div>
           </div>
 
-          {/* TextIA */}
+          {/* Copy AI */}
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1">
               <div className="flex items-center mb-6">
@@ -178,8 +178,8 @@ export default function AssistantsShowcase() {
                   ✍️
                 </div>
                 <div>
-                  <h3 className="text-3xl font-black text-gray-800">TextIA</h3>
-                  <p className="text-green-500 font-semibold">Copywriter Persuasivo</p>
+                  <h3 className="text-3xl font-black text-gray-800">Copy AI</h3>
+                  <p className="text-green-500 font-semibold">Generador de Copys</p>
                   <div className="flex gap-2 mt-2">
                     <span className="inline-flex items-center rounded-full bg-gradient-to-r from-orange-400 to-pink-400 text-white px-3 py-1 text-xs font-bold">
                       BASIC
@@ -199,15 +199,15 @@ export default function AssistantsShowcase() {
                 <ul className="space-y-2 text-gray-700">
                   <li className="flex items-start">
                     <span className="text-green-500 mr-2">•</span>
-                    Estudia posts con millones de interacciones
+                    Genera copys listos para publicar
                   </li>
                   <li className="flex items-start">
                     <span className="text-green-500 mr-2">•</span>
-                    Aplica técnicas de copywriting probadas
+                    Utiliza técnicas de persuasión
                   </li>
                   <li className="flex items-start">
                     <span className="text-green-500 mr-2">•</span>
-                    Adapta el tono a cada red social y audiencia
+                    Adapta el tono a cada red social
                   </li>
                 </ul>
               </div>
@@ -264,7 +264,7 @@ export default function AssistantsShowcase() {
             </div>
           </div>
 
-          {/* AdIA */}
+          {/* Face AI */}
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <div className="relative">
@@ -304,8 +304,8 @@ export default function AssistantsShowcase() {
                   📊
                 </div>
                 <div>
-                  <h3 className="text-3xl font-black text-gray-800">AdIA</h3>
-                  <p className="text-red-500 font-semibold">Optimizador de Campañas</p>
+                  <h3 className="text-3xl font-black text-gray-800">Face AI</h3>
+                  <p className="text-red-500 font-semibold">Analizador de Face Ads</p>
                   <div className="flex gap-2 mt-2">
                     <span className="inline-flex items-center rounded-full bg-gradient-to-r from-cyan-400 to-purple-400 text-white px-3 py-1 text-xs font-bold">
                       PLUS
@@ -319,15 +319,15 @@ export default function AssistantsShowcase() {
                 <ul className="space-y-2 text-gray-700">
                   <li className="flex items-start">
                     <span className="text-red-500 mr-2">•</span>
-                    Monitorea tus campañas en tiempo real 24/7
+                    Analiza conjuntos de anuncios
                   </li>
                   <li className="flex items-start">
                     <span className="text-red-500 mr-2">•</span>
-                    Ajusta presupuestos automáticamente según performance
+                    Interpreta métricas clave
                   </li>
                   <li className="flex items-start">
                     <span className="text-red-500 mr-2">•</span>
-                    Identifica audiencias de alta conversión
+                    Recomienda acciones para optimizar
                   </li>
                 </ul>
               </div>
@@ -348,7 +348,7 @@ export default function AssistantsShowcase() {
             </div>
           </div>
 
-          {/* EmailIA */}
+          {/* Email AI */}
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1">
               <div className="flex items-center mb-6">
@@ -356,7 +356,7 @@ export default function AssistantsShowcase() {
                   📧
                 </div>
                 <div>
-                  <h3 className="text-3xl font-black text-gray-800">EmailIA</h3>
+                  <h3 className="text-3xl font-black text-gray-800">Email AI</h3>
                   <p className="text-indigo-500 font-semibold">Maestro del Email Marketing</p>
                   <div className="flex gap-2 mt-2">
                     <span className="inline-flex items-center rounded-full bg-gradient-to-r from-cyan-400 to-purple-400 text-white px-3 py-1 text-xs font-bold">

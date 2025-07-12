@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { CheckCircleIcon } from "../flyerIaLanding/icons";
+import CountryPriceText from "../flyerIaLanding/CountryPriceText";
 import { plans, PlanKey } from "./data";
 
 export default function PlansSection() {
@@ -44,7 +45,7 @@ export default function PlansSection() {
                 <div className="text-center mb-8">
                   <h3 className="text-3xl font-black text-gray-800 mb-2">{plan.name}</h3>
                   <div className="text-5xl font-black text-gray-800 mb-2">
-                    ${plan.price}
+                    <CountryPriceText prices={plan.priceMap} />
                     <span className="text-lg text-gray-500 font-normal">/mes</span>
                   </div>
                   <p className="text-gray-600">

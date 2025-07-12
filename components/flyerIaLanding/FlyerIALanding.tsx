@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import CarouselFlyers, { Flyer } from "./CarouselFlyers";
 import CountryPriceText from "./CountryPriceText";
-import Subscriptions from "../Subscriptions";
+import { PlansSection, AssistantsShowcase } from "../subscriptions";
 import HeroSection from "./HeroSection";
 import VideoSection from "./VideoSection";
 import HowItWorksSection from "./HowItWorksSection";
@@ -1538,7 +1538,8 @@ export default function FlyerIALanding() {
         <CarouselFlyers flyers={flyersVerticalGroup4} itemType="vertical" />
         <CarouselFlyers flyers={flyersSquareGroup4} itemType="square" />
         <PricingSection priceMap={priceMap} linkPagoHotmart={linkPagoHotmart} />
-        <Subscriptions />
+        <PlansSection />
+        <AssistantsShowcase />
         <FixedCtaButtons linkPagoHotmart={linkPagoHotmart} priceMap={priceMap} />
       </div>
     </>

@@ -1514,8 +1514,10 @@ export default function FlyerIALanding() {
           flyersSquareHeader={flyersSquareHeader}
           currentFlyer={currentFlyer}
         />
-        <CarouselFlyers flyers={flyersVerticalGroup1} itemType="vertical" />
+                <CarouselFlyers flyers={flyersVerticalGroup1} itemType="vertical" />
         <CarouselFlyers flyers={flyersSquareGroup1} itemType="square" />
+        <AssistantsShowcase />
+
         <section className="py-16 bg-gradient-to-r from-gray-100 to-gray-200 overflow-hidden">
           <div className="container mx-auto px-4 mb-12">
             <div className="text-center">
@@ -1537,10 +1539,10 @@ export default function FlyerIALanding() {
         />
         <CarouselFlyers flyers={flyersVerticalGroup4} itemType="vertical" />
         <CarouselFlyers flyers={flyersSquareGroup4} itemType="square" />
-        <PricingSection priceMap={priceMap} linkPagoHotmart={linkPagoHotmart} />
-        <PlansSection />
-        <AssistantsShowcase />
-        <FixedCtaButtons linkPagoHotmart={linkPagoHotmart} priceMap={priceMap} />
+                <PlansSection />
+
+{/*         <PricingSection priceMap={priceMap} linkPagoHotmart={linkPagoHotmart} />
+ */}
       </div>
     </>
   );

@@ -8,13 +8,14 @@ export default function PlansSection() {
   const [activePlan, setActivePlan] = useState<PlanKey>("pro");
 
   return (
-    <section id="plans" className="py-20 bg-white">
+    <section id="plans" className="py-20 bg-gradient-to-r from-orange-500 via-pink-500 to-cyan-500 text-white">
+
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-black text-gray-800 mb-6">
+          <h2 className="text-4xl md:text-5xl font-black text-white mb-6">
             Elige tu Arsenal de Asistentes IA
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-100 max-w-3xl mx-auto">
             Cada plan incluye asistentes especializados que trabajan juntos para maximizar tus resultados
           </p>
         </div>

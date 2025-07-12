@@ -49,9 +49,13 @@ export default function AssistantCard({
       <div className={textOrder}>
         <div className="flex items-center mb-6">
           <div
-            className={`w-20 h-20 bg-gradient-to-r ${iconGradient} rounded-full flex items-center justify-center mr-6 shadow-lg`}
+            className={`w-20 h-20 bg-gradient-to-r ${iconGradient} rounded-full overflow-hidden mr-6 shadow-lg`}
           >
-            <img src={iconSrc} alt={name} className="w-10 h-10 object-contain" />
+            <img
+              src={iconSrc}
+              alt={name}
+              className="w-full h-full object-cover"
+            />
           </div>
           <div>
             <h3 className="text-3xl font-black text-gray-800">{name}</h3>

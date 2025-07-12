@@ -88,12 +88,16 @@ export default function AssistantCard({
       <div className={graphicOrder}>
         <div className="relative">
           <div
-            className={`bg-gradient-to-br ${iconGradient} rounded-3xl p-8 shadow-2xl flex justify-center`}
+            className={`bg-gradient-to-br ${iconGradient} rounded-3xl shadow-2xl aspect-square overflow-hidden`}
           >
-            <img src={graphicSrc} alt={name} className="w-40 h-40 object-contain" />
+            <img
+              src={graphicSrc}
+              alt={name}
+              className="w-full h-full object-cover"
+            />
           </div>
           {highlight && (
-            <div className={`absolute -top-4 -right-4 px-4 py-2 rounded-full text-sm font-bold ${highlight.classes}`}> 
+            <div className={`absolute -top-4 -right-4 px-4 py-2 rounded-full text-sm font-bold ${highlight.classes}`}>
               {highlight.text}
             </div>
           )}

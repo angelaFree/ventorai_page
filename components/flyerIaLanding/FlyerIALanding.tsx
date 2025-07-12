@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import CarouselFlyers, { Flyer } from "./CarouselFlyers";
 import Image from "next/image";
 import CountryPriceText from "./CountryPriceText";
+import Subscriptions from "../Subscriptions";
 
 export default function FlyerIALanding() {
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
@@ -2126,6 +2127,8 @@ export default function FlyerIALanding() {
             </div>
           </div>
         </section>
+
+        <Subscriptions />
 
         {/* Fixed CTA Buttons */}
         <div className="fixed bottom-6 left-1/2 transform -translate-x-1/2 z-50">

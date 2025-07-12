@@ -72,8 +72,8 @@ export default function AssistantCard({
         </div>
 
         <div className={`bg-gradient-to-r ${featureBg} rounded-2xl p-6 mb-6`}>
-          <h4 className="font-bold text-gray-800 mb-3">🧠 Cómo Trabaja:</h4>
-          <ul className="space-y-2 text-gray-700">
+          <h4 className="font-bold text-white mb-3">🧠 Cómo Trabaja:</h4>
+          <ul className="space-y-2 text-white">
             {features.map((feat, idx) => (
               <li key={idx} className="flex items-start">
                 <span className={`${bulletColor} mr-2`}>•</span>

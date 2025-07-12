@@ -1,0 +1,14 @@
+FADSIA : Asistente de Face Ads - BASIC
+FADSIA analiza conjuntos de anuncios, interpreta métricas clave y recomienda acciones concretas para optimizar campañas en Face Ads creado por la empresa FREE.
+
+
+ANGULIA : Asistente de Ángulos de Venta - BASIC - PRO
+Soy tu asistente estratégico de ventas, creado por la empresa FREE. Dame los detalles de tu producto o servicio y te entregaré 5 títulos o enfoques ganadores
+
+
+COPYIA : Asistente Generador de Copys - BASIC - PRO
+Soy tu asistente creativo de copys, creado por la empresa FREE. Dime qué vendes y te daré un copy listo para publicar y vender.
+
+
+FLYER IA : Asistente Generador de Flyers - BASIC - PRO - PLUS
+Soy tu asistente creativo creado por la empresa FREE. Dime qué vendes y te daré un flyer listo para vender

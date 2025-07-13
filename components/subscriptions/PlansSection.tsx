@@ -59,8 +59,8 @@ export default function PlansSection() {
                       key={assistant.name}
                       className="flex items-start space-x-3 p-3 rounded-lg bg-gray-50 hover:bg-gray-100 transition-colors duration-200"
                     >
-                      <div className="w-6 h-6">
-                        <img src={assistant.iconSrc} alt={assistant.name} className="w-full h-full object-contain" />
+                      <div className="w-6 h-6 rounded-full overflow-hidden">
+                        <img src={assistant.iconSrc} alt={assistant.name} className="w-full h-full object-cover" />
                       </div>
                       <div className="flex-1">
                         <h4 className="font-bold text-gray-800">{assistant.name}</h4>
@@ -106,8 +106,8 @@ export default function PlansSection() {
                 className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300"
               >
                 <div className="text-center mb-4">
-                  <div className="w-12 h-12 mx-auto mb-3">
-                    <img src={assistant.iconSrc} alt={assistant.name} className="w-full h-full object-contain" />
+                  <div className="w-12 h-12 mx-auto mb-3 rounded-full overflow-hidden">
+                    <img src={assistant.iconSrc} alt={assistant.name} className="w-full h-full object-cover" />
                   </div>
                   <h4 className="text-xl font-bold text-gray-800">{assistant.name}</h4>
                   <p className="text-gray-600 text-sm mt-2">{assistant.description}</p>

@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 export interface Flyer {
   id: number;
@@ -52,15 +53,18 @@ export default function CarouselFlyers({ flyers, itemType }: CarouselFlyersProps
             <div
               key={idx}
               className={`
-                flex-shrink-0 ${sizeClass()}
+                relative flex-shrink-0 ${sizeClass()}
                 rounded-2xl overflow-hidden shadow-2xl
                 transform hover:scale-105 transition-all duration-300
               `}
             >
-              <img
+              <Image
                 src={flyer.image}
                 alt={`Flyer ${flyer.category}`}
-                className="w-full h-full object-cover"
+                fill
+                sizes="100vw"
+                loading="lazy"
+                className="object-cover"
               />
 {/*               <div className="absolute bottom-4 left-4">
                 <span className="inline-flex items-center rounded-full bg-white/90 text-gray-800 text-xs px-2.5 py-0.5 font-medium">

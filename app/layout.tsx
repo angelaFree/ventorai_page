@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     siteName: "Ventor AI",
     images: [
       {
-        url: "/next.svg",
+        url: "/logo_ventor.png",
         width: 1200,
         height: 630,
         alt: "FlyerAI",

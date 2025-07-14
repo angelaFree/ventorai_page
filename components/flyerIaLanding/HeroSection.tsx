@@ -46,7 +46,11 @@ export default function HeroSection({
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
             <button
               type="button"
-              onClick={() => window.open(linkPagoHotmart, "_blank")}
+              onClick={() =>
+                document
+                  .getElementById("plans")
+                  ?.scrollIntoView({ behavior: "smooth" })
+              }
               className="inline-flex items-center justify-center rounded-full text-xl font-bold bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-12 py-6 shadow-2xl transform hover:scale-105 transition-all duration-300"
             >
               <RocketIcon />

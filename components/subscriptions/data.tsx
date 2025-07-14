@@ -64,6 +64,22 @@ const basePriceMap = {
   BO: 52.0,
 };
 
+const proPriceMap = {
+  US: 8.9,
+  PE: 34.0,
+  MX: 206.0,
+  CO: 37.670,
+  BO: 70.0,
+};
+
+const plusPriceMap = {
+  US: 11.9,
+  PE: 45.0,
+  MX: 275.0,
+  CO: 50.370,
+  BO: 90.0,
+};
+
 const multiplyPriceMap = (ratio: number) => {
   const result: Record<string, number> = {};
   Object.entries(basePriceMap).forEach(([k, v]) => {
@@ -82,14 +98,14 @@ export const plans: Record<string, Plan> = {
   },
   pro: {
     name: "PRO",
-    priceMap: multiplyPriceMap(8.9 / 6.9),
+    priceMap: proPriceMap,
     color: "from-orange-500 to-pink-500",
     assistants: [assistantsData.flyerAI, assistantsData.angulAI, assistantsData.copyAI],
     hotmartLink: "https://pay.hotmart.com/G100299066R?off=7cxi2ny6&checkoutMode=10",
   },
   plus: {
     name: "PLUS",
-    priceMap: multiplyPriceMap(11.9 / 6.9),
+    priceMap: plusPriceMap,
     color: "from-purple-500 to-blue-500",
     assistants: [
       assistantsData.flyerAI,

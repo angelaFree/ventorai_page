@@ -74,7 +74,7 @@ export default function HeroSection({
             <div className="absolute inset-0 bg-gradient-to-r from-cyan-400 to-purple-400 rounded-2xl transform -rotate-6 opacity-40"></div>
             <div className="relative bg-white rounded-2xl p-6 shadow-2xl transform hover:scale-105 transition-all duration-500">
               <div className="text-center">
-                <div className="relative w-full h-45 mb-4 rounded-lg overflow-hidden">
+                <div className="relative w-full h-50 mb-4 rounded-lg overflow-hidden">
                   <Image
                     src={flyersSquareHeader[currentFlyer].image}
                     alt={`Flyer ${flyersSquareHeader[currentFlyer].category}`}

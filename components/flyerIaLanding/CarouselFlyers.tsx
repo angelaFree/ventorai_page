@@ -61,6 +61,7 @@ export default function CarouselFlyers({ flyers, itemType }: CarouselFlyersProps
                 src={flyer.image}
                 alt={`Flyer ${flyer.category}`}
                 className="w-full h-full object-cover"
+                loading="lazy"
               />
 {/*               <div className="absolute bottom-4 left-4">
                 <span className="inline-flex items-center rounded-full bg-white/90 text-gray-800 text-xs px-2.5 py-0.5 font-medium">

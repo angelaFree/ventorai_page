@@ -78,6 +78,8 @@ export default function PlansSection() {
                 </div>
 
                 <button
+                  type="button"
+                  onClick={() => window.open(plan.hotmartLink, "_blank")}
                   className={`w-full py-4 rounded-full font-bold text-lg transition-all duration-300 ${
                     planKey === "pro"
                       ? "bg-gradient-to-r from-orange-500 to-pink-500 hover:from-orange-600 hover:to-pink-600 text-white transform hover:scale-105"

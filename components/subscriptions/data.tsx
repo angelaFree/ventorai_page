@@ -10,6 +10,7 @@ export interface Plan {
   priceMap: Record<string, number>;
   color: string;
   assistants: Assistant[];
+  hotmartLink: string;
 }
 
 export const assistantsData: Record<string, Assistant> = {
@@ -77,12 +78,14 @@ export const plans: Record<string, Plan> = {
     priceMap: basePriceMap,
     color: "from-green-400 to-cyan-400",
     assistants: [assistantsData.flyerAI],
+    hotmartLink: "https://pay.hotmart.com/G100299066R?off=xhs7uuy4&checkoutMode=10",
   },
   pro: {
     name: "PRO",
     priceMap: multiplyPriceMap(8.9 / 6.9),
     color: "from-orange-500 to-pink-500",
     assistants: [assistantsData.flyerAI, assistantsData.angulAI, assistantsData.copyAI],
+    hotmartLink: "https://pay.hotmart.com/G100299066R?off=xhs7uuy4&checkoutMode=10",
   },
   plus: {
     name: "PLUS",
@@ -94,6 +97,7 @@ export const plans: Record<string, Plan> = {
       assistantsData.copyAI,
       assistantsData.faceAI,
     ],
+    hotmartLink: "https://pay.hotmart.com/G100299066R?off=xhs7uuy4&checkoutMode=10",
   },
 };
 

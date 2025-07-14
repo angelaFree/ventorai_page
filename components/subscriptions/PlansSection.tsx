@@ -46,7 +46,7 @@ export default function PlansSection() {
                   <h3 className="text-3xl font-black text-gray-800 mb-2">{plan.name}</h3>
                   <div className="text-5xl font-black text-gray-800 mb-2">
                     <CountryPriceText prices={plan.priceMap} />
-                    <span className="text-lg text-gray-500 font-normal">/mes</span>
+                    <span className="text-sm text-gray-500 font-normal">/mes</span>
                   </div>
                   <p className="text-gray-600">
                     {plan.assistants.length} Asistente{plan.assistants.length > 1 ? "s" : ""} IA
@@ -91,40 +91,6 @@ export default function PlansSection() {
           ))}
         </div>
 
-        <div className="bg-gradient-to-r from-gray-50 to-gray-100 rounded-3xl p-8">
-          <div className="text-center mb-8">
-            <h3 className="text-3xl font-black text-gray-800 mb-4">
-              Plan {plans[activePlan].name} - Asistentes Incluidos
-            </h3>
-            <p className="text-gray-600">Explora cada asistente y sus capacidades únicas</p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {plans[activePlan].assistants.map((assistant) => (
-              <div
-                key={assistant.name}
-                className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300"
-              >
-                <div className="text-center mb-4">
-                  <div className="w-12 h-12 mx-auto mb-3 rounded-full overflow-hidden">
-                    <img src={assistant.iconSrc} alt={assistant.name} className="w-full h-full object-cover" />
-                  </div>
-                  <h4 className="text-xl font-bold text-gray-800">{assistant.name}</h4>
-                  <p className="text-gray-600 text-sm mt-2">{assistant.description}</p>
-                </div>
-
-                <div className="space-y-2">
-                  {assistant.features.map((feature, idx) => (
-                    <div key={idx} className="flex items-center text-sm text-gray-700">
-                      <CheckCircleIcon />
-                      <span className="ml-2">{feature}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
       </div>
     </section>
   );

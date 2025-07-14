@@ -15,7 +15,7 @@ export interface Plan {
 export const assistantsData: Record<string, Assistant> = {
   flyerAI: {
     name: "Flyer AI",
-    iconSrc: "/avatar_maria.png",
+    iconSrc: "/flyerai_avatar.png",
     description: "Asistente Generador de Flyers",
     features: [
       "Genera flyers listos para vender",
@@ -25,7 +25,7 @@ export const assistantsData: Record<string, Assistant> = {
   },
   angulAI: {
     name: "Angul AI",
-    iconSrc: "/avatar_ana.png",
+    iconSrc: "/angulai_avatar.png",
     description: "Asistente de Ángulos de Venta",
     features: [
       "Analiza tu producto o servicio",
@@ -35,7 +35,7 @@ export const assistantsData: Record<string, Assistant> = {
   },
   copyAI: {
     name: "Copy AI",
-    iconSrc: "/avatar_carlos.png",
+    iconSrc: "/copyai_avatar.png",
     description: "Asistente Generador de Copys",
     features: [
       "Redacta copys listos para publicar",
@@ -45,7 +45,7 @@ export const assistantsData: Record<string, Assistant> = {
   },
   faceAI: {
     name: "Face AI",
-    iconSrc: "/avatar_ana.png",
+    iconSrc: "/faceai_avatar.png",
     description: "Asistente de Facebook Ads",
     features: [
       "Analiza conjuntos de anuncios",
@@ -76,7 +76,7 @@ export const plans: Record<string, Plan> = {
     name: "BASIC",
     priceMap: basePriceMap,
     color: "from-green-400 to-cyan-400",
-    assistants: [assistantsData.copyAI],
+    assistants: [assistantsData.flyerAI],
   },
   pro: {
     name: "PRO",

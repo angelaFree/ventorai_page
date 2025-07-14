@@ -75,6 +75,7 @@ export default function HeroSection({
                     src={flyersSquareHeader[currentFlyer].image}
                     alt={`Flyer ${flyersSquareHeader[currentFlyer].category}`}
                     className="w-full h-full object-cover"
+                    loading="lazy"
                   />
                 </div>
                 <div className="text-gray-800 font-bold text-lg">

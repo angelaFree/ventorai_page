@@ -42,8 +42,10 @@ export default function AssistantCard({
   reverse,
   graphicSrc,
 }: AssistantCardProps) {
-  const textOrder = reverse ? "" : "order-2 lg:order-1";
-  const graphicOrder = reverse ? "" : "order-1 lg:order-2";
+  // Ensure text appears before the graphic on mobile while
+  // preserving the alternating layout on larger screens
+  const textOrder = `order-1 ${reverse ? "lg:order-2" : "lg:order-1"}`;
+  const graphicOrder = `order-2 ${reverse ? "lg:order-1" : "lg:order-2"}`;
   return (
     <div className="grid lg:grid-cols-2 gap-12 items-center">
       <div className={textOrder}>

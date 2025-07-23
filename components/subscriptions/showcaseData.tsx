@@ -104,4 +104,25 @@ export const showcaseItems: ShowcaseItem[] = [
     reverse: true,
     graphicSrc: "/faceai_ejemplo.png",
   },
+  {
+    id: "product",
+    iconSrc: "/productai_avatar.png",
+    iconGradient: "from-yellow-400 to-teal-400",
+    name: "Product AI",
+    tagline: "Anuncios de Productos Físicos",
+    taglineColor: "text-yellow-500",
+    badges: [
+      { label: "PRO", gradient: "from-pink-400 to-cyan-400" },
+      { label: "PLUS", gradient: "from-cyan-400 to-purple-400" },
+    ],
+    featureBg: "from-yellow-500 to-teal-500",
+    bulletColor: "text-yellow-500",
+    features: [
+      "Crea anuncios optimizados para ecommerce",
+      "Diseña flyers y banners para productos",
+      "Genera textos atractivos para vender",
+    ],
+    highlight: { text: "PRO / PLUS", classes: "bg-pink-400 text-white" },
+    graphicSrc: "/productai_ejemplo.png",
+  },
 ];

@@ -54,6 +54,16 @@ export const assistantsData: Record<string, Assistant> = {
       "Recomienda acciones de optimización",
     ],
   },
+  productAI: {
+    name: "Product AI",
+    iconSrc: "/productai_avatar.png",
+    description: "Asistente para anuncios de productos físicos",
+    features: [
+      "Crea flyers optimizados para ecommerce",
+      "Diseña banners para tiendas y catálogos",
+      "Genera textos atractivos para tus listados",
+    ],
+  },
 };
 
 const basePriceMap = {
@@ -100,7 +110,12 @@ export const plans: Record<string, Plan> = {
     name: "PRO",
     priceMap: proPriceMap,
     color: "from-orange-500 to-pink-500",
-    assistants: [assistantsData.flyerAI, assistantsData.angulAI, assistantsData.copyAI],
+    assistants: [
+      assistantsData.flyerAI,
+      assistantsData.angulAI,
+      assistantsData.copyAI,
+      assistantsData.productAI,
+    ],
     hotmartLink: "https://pay.hotmart.com/G100299066R?off=7cxi2ny6&checkoutMode=10",
   },
   plus: {
@@ -112,6 +127,7 @@ export const plans: Record<string, Plan> = {
       assistantsData.angulAI,
       assistantsData.copyAI,
       assistantsData.faceAI,
+      assistantsData.productAI,
     ],
     hotmartLink: "https://pay.hotmart.com/G100299066R?off=8cq60olv&checkoutMode=10",
   },

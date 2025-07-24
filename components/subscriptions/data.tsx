@@ -66,7 +66,7 @@ export const assistantsData: Record<string, Assistant> = {
   },
   ebookAI: {
     name: "Ebook AI",
-    iconSrc: "/productai_avatar.png",
+    iconSrc: "/ebookai_avatar.png",
     description:
       "Dame el título de tu ebook y obtendrás portadas impactantes y contenido promocional",
     features: [

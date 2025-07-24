@@ -144,6 +144,6 @@ export const showcaseItems: ShowcaseItem[] = [
       "Genera textos promocionales listos para publicar",
     ],
     highlight: { text: "PRO / PLUS", classes: "bg-green-400 text-black" },
-    graphicSrc: "/productai_ejemplo.png",
+    graphicSrc: "/ebookai_ejemplo.png",
   },
 ];

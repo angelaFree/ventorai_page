@@ -125,4 +125,25 @@ export const showcaseItems: ShowcaseItem[] = [
     highlight: { text: "PRO / PLUS", classes: "bg-pink-400 text-white" },
     graphicSrc: "/productai_ejemplo.png",
   },
+  {
+    id: "ebook",
+    iconSrc: "/productai_avatar.png",
+    iconGradient: "from-teal-400 to-indigo-400",
+    name: "Ebook AI",
+    tagline: "Portadas y Promoción de Ebooks",
+    taglineColor: "text-teal-500",
+    badges: [
+      { label: "PRO", gradient: "from-pink-400 to-cyan-400" },
+      { label: "PLUS", gradient: "from-cyan-400 to-purple-400" },
+    ],
+    featureBg: "from-teal-500 to-indigo-500",
+    bulletColor: "text-teal-500",
+    features: [
+      "Genera portadas profesionales al instante",
+      "Crea mockups atractivos de tu ebook",
+      "Genera textos promocionales listos para publicar",
+    ],
+    highlight: { text: "PRO / PLUS", classes: "bg-green-400 text-black" },
+    graphicSrc: "/productai_ejemplo.png",
+  },
 ];

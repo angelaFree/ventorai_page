@@ -64,6 +64,17 @@ export const assistantsData: Record<string, Assistant> = {
       "Genera textos atractivos para tus listados",
     ],
   },
+  ebookAI: {
+    name: "Ebook AI",
+    iconSrc: "/productai_avatar.png",
+    description:
+      "Dame el título de tu ebook y obtendrás portadas impactantes y contenido promocional",
+    features: [
+      "Genera portadas profesionales y llamativas",
+      "Obtén mockups de tu ebook al instante",
+      "Crea textos promocionales listos para publicar",
+    ],
+  },
 };
 
 const basePriceMap = {
@@ -114,6 +125,7 @@ export const plans: Record<string, Plan> = {
       assistantsData.flyerAI,
       assistantsData.angulAI,
       assistantsData.copyAI,
+      assistantsData.ebookAI,
       assistantsData.productAI,
     ],
     hotmartLink: "https://pay.hotmart.com/G100299066R?off=7cxi2ny6&checkoutMode=10",
@@ -127,6 +139,7 @@ export const plans: Record<string, Plan> = {
       assistantsData.angulAI,
       assistantsData.copyAI,
       assistantsData.faceAI,
+      assistantsData.ebookAI,
       assistantsData.productAI,
     ],
     hotmartLink: "https://pay.hotmart.com/G100299066R?off=8cq60olv&checkoutMode=10",

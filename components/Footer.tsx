@@ -6,7 +6,7 @@ import { FaWhatsapp, FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa6"
 // Actualiza el array `social` para usar los componentes de íconos
 const social = [
   {
-    href: "https://wa.me/17073406383",
+    href: "https://wa.link/schs0u",
     label: "WhatsApp",
     // Usa el componente importado y pasa el className
     icon: <FaWhatsapp className="h-6 w-6" />,

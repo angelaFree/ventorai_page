@@ -127,7 +127,7 @@ export const showcaseItems: ShowcaseItem[] = [
   },
   {
     id: "ebook",
-    iconSrc: "/productai_avatar.png",
+    iconSrc: "/ebookai_avatar.png",
     iconGradient: "from-teal-400 to-indigo-400",
     name: "Ebook AI",
     tagline: "Portadas y Promoción de Ebooks",

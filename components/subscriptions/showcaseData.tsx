@@ -21,8 +21,8 @@ export const showcaseItems: ShowcaseItem[] = [
     id: "flyer",
     iconSrc: "/flyerai_avatar.png",
     iconGradient: "from-orange-400 to-pink-400",
-    name: "Flyer AI",
-    tagline: "Generador de Flyers",
+    name: "VendeCursos AI",
+    tagline: "Anuncios para Cursos Online",
     taglineColor: "text-orange-500",
     badges: [
       { label: "BASIC", gradient: "from-orange-400 to-pink-400" },
@@ -32,9 +32,9 @@ export const showcaseItems: ShowcaseItem[] = [
     featureBg: "from-orange-500 to-pink-500",
     bulletColor: "text-orange-500",
     features: [
-      "Genera diseños basados en anuncios virales",
-      "Actualiza plantillas cada semana",
-      "Optimiza cada pieza para tu nicho",
+      "Genera anuncios a partir de tendencias virales",
+      "Plantillas nuevas cada semana",
+      "Optimiza cada pieza para vender cursos",
     ],
     highlight: { text: "BASIC / PRO / PLUS", classes: "bg-yellow-400 text-black" },
     graphicSrc: "/flyerai_ejemplo.png",

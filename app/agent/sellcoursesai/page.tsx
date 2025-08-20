@@ -1,5 +1,4 @@
 
-import FlyerIALanding from "@/components/flyerIaLanding/FlyerIALanding";
 import { PixelGeneralMeta } from "@/components/pixel/pixelGeneralMeta/PixelGeneralMeta";
 import VendeCursosAI from "@/components/vendecursosai/VendeCursosAI";
 import React, { Suspense } from "react";

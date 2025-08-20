@@ -1390,14 +1390,14 @@ export default function VendeCursosAI() {
       avatar: "/avatar_maria.png",
     },
     {
-      text: "Increíble cómo FlyerIA captura las tendencias virales. Mis conversiones subieron 300%.",
+      text: "Increíble cómo VendeCursos AI captura las tendencias virales. Mis conversiones subieron 300%.",
       author: "Carlos Ruiz",
       role: "E-commerce Owner",
       rating: 5,
       avatar: "/avatar_carlos.png",
     },
     {
-      text: "Adiós Canva, adiós diseñadores caros. FlyerIA es todo lo que necesito.",
+      text: "Adiós Canva, adiós diseñadores caros. VendeCursos AI es todo lo que necesito.",
       author: "Ana Martínez",
       role: "Social Media Specialist",
       rating: 5,
@@ -1596,11 +1596,11 @@ export default function VendeCursosAI() {
   );
 
   const priceMap = {
-    US: 6.9,
-    PE: 27.0,
-    MX: 162.9,
-    CO: 29.73,
-    BO: 52.0,
+    US: 4.9,
+    PE: 19.17,
+    MX: 115.7,
+    CO: 21.12,
+    BO: 36.93,
   };
   return (
     <>
@@ -1645,16 +1645,20 @@ export default function VendeCursosAI() {
             <div className="mx-auto max-w-4xl">
               <div className="inline-flex items-center rounded-full bg-yellow-400 text-black hover:bg-yellow-300 text-lg px-6 py-2 mb-6 font-medium">
                 <SparklesIcon />
-                <span className="ml-2">¡Nuevo! IA Generativa para Flyers</span>
+                <span className="ml-2">¡Nuevo! Asistente de Anuncios con IA</span>
               </div>
 
               <h1 className="text-5xl md:text-7xl font-black mb-6 bg-gradient-to-r from-yellow-300 to-white bg-clip-text text-transparent leading-tight">
-                Crea Flyers Virales en Segundos con FlyerIA
+                Crea anuncios para tus cursos en segundos con VendeCursos AI
               </h1>
 
               <p className="text-xl md:text-2xl mb-8 text-cyan-100 max-w-3xl mx-auto leading-relaxed">
-                Olvídate de Canva y diseñadores: genera tus diseños a partir de
-                los anuncios más exitosos en Facebook Ads Library.
+                Asistente montado en ChatGPT que genera flyers y anuncios para cursos online.
+                Olvídate de Canva y diseñadores: en segundos tendrás piezas listas para vender.
+              </p>
+
+              <p className="text-xl md:text-2xl mb-8 text-cyan-100 max-w-3xl mx-auto leading-relaxed">
+                Solo $4.9/mes al precio de un café (antes $45). Recuperas la inversión con tu primera venta.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
@@ -1683,6 +1687,39 @@ export default function VendeCursosAI() {
             </div>
           </div>
         </section>
+        <section className="py-16 bg-white">
+          <div className="container mx-auto px-4">
+            <h2 className="text-3xl font-bold text-center mb-8">¿Qué ofrece VendeCursos AI?</h2>
+            <ul className="max-w-3xl mx-auto text-lg space-y-4 list-disc list-inside">
+              <li>Cuentas gratuitas: genera hasta 5 anuncios al día por cuenta desde cualquier dispositivo.</li>
+              <li>Con planes de pago de ChatGPT: hasta 5 anuncios por minuto.</li>
+              <li>Tamaños disponibles: 1024×1024, 1024×1792 y 1792×1024 px.</li>
+              <li>Motor de imágenes de ChatGPT combinado con tecnología Ventor para anuncios de alta calidad.</li>
+              <li>Bono: ebook de prompts y acceso a grupo exclusivo de usuarios.</li>
+            </ul>
+          </div>
+        </section>
+
+        <section className="py-16 bg-gray-50">
+          <div className="container mx-auto px-4">
+            <h2 className="text-3xl font-bold text-center mb-8">Comparativa de resultados</h2>
+            <div className="grid md:grid-cols-3 gap-8 items-center">
+              <div className="text-center">
+                <Image src="https://placehold.co/300x400" alt="Imagen GPT" width={300} height={400} className="mx-auto rounded-lg" />
+                <p className="mt-2">Imagen generada con GPT normal</p>
+              </div>
+              <div className="text-center">
+                <Image src="https://placehold.co/300x400?text=IA" alt="Imagen otra IA" width={300} height={400} className="mx-auto rounded-lg" />
+                <p className="mt-2">Otras IA</p>
+              </div>
+              <div className="text-center">
+                <Image src="https://placehold.co/300x400?text=VendeCursosAI" alt="Anuncio VendeCursos AI" width={300} height={400} className="mx-auto rounded-lg" />
+                <p className="mt-2">Ejemplo VendeCursos AI</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <CarouselFlyers flyers={flyersVerticalGroup1} itemType="vertical" />
 
         <CarouselFlyers flyers={flyersSquareGroup1} itemType="square" />
@@ -1745,7 +1782,7 @@ export default function VendeCursosAI() {
                 Flyers Que Están Arrasando
               </h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                Diseños virales creados con FlyerIA que están generando miles de
+                Diseños virales creados con VendeCursos AI que están generando miles de
                 conversiones
               </p>
             </div>
@@ -1763,7 +1800,7 @@ export default function VendeCursosAI() {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
               <h2 className="text-4xl md:text-5xl font-black text-white mb-8">
-                Ve FlyerIA en Acción
+                Ve VendeCursos AI en Acción
               </h2>
               <p className="text-xl text-purple-100 mb-12">
                 Descubre cómo crear flyers virales en menos de 30 segundos
@@ -1775,7 +1812,7 @@ export default function VendeCursosAI() {
                   <iframe
                     className="w-full h-full"
                     src="https://www.youtube.com/embed/GECrfns4fwQ?rel=0"
-                    title="Vídeo FlyerIA"
+                    title="Vídeo VendeCursos AI"
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen

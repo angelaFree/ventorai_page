@@ -15,13 +15,13 @@ export interface Plan {
 
 export const assistantsData: Record<string, Assistant> = {
   flyerAI: {
-    name: "Flyer AI",
+    name: "VendeCursos AI",
     iconSrc: "/flyerai_avatar.png",
-    description: "Asistente Generador de Flyers",
+    description: "Asistente para anuncios de cursos online",
     features: [
-      "Genera flyers listos para vender",
+      "Genera anuncios listos para vender cursos",
       "Actualiza diseños con plantillas semanales",
-      "Optimiza cada pieza para tu nicho",
+      "Optimiza cada pieza para tu nicho educativo",
     ],
   },
   angulAI: {
@@ -78,27 +78,27 @@ export const assistantsData: Record<string, Assistant> = {
 };
 
 const basePriceMap = {
-  US: 6.9,
-  PE: 27.0,
-  MX: 162.9,
-  CO: 29.73,
-  BO: 52.0,
+  US: 4.9,
+  PE: 19.17,
+  MX: 115.7,
+  CO: 21.12,
+  BO: 36.93,
 };
 
 const proPriceMap = {
-  US: 8.9,
-  PE: 34.0,
-  MX: 206.0,
-  CO: 37.670,
-  BO: 70.0,
+  US: 6.32,
+  PE: 24.73,
+  MX: 149.19,
+  CO: 27.23,
+  BO: 47.63,
 };
 
 const plusPriceMap = {
-  US: 11.9,
-  PE: 45.0,
-  MX: 275.0,
-  CO: 50.370,
-  BO: 90.0,
+  US: 8.45,
+  PE: 33.04,
+  MX: 199.43,
+  CO: 36.44,
+  BO: 63.64,
 };
 
 const multiplyPriceMap = (ratio: number) => {

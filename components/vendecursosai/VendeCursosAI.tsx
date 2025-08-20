@@ -1881,9 +1881,9 @@ export default function VendeCursosAI() {
         <CarouselFlyers flyers={flyersVerticalGroup3} itemType="vertical" />
         <CarouselFlyers flyers={flyersSquareGroup3} itemType="square" />
 
-        <section className="py-16 bg-gray-50">
+        <section className="py-16 bg-gray-50 text-gray-800">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-center mb-8">Comparativa de resultados</h2>
+            <h2 className="text-3xl font-bold text-center mb-8 bg-gradient-to-r from-orange-500 via-pink-500 to-cyan-500 bg-clip-text text-transparent">Comparativa de resultados</h2>
             <div className="grid md:grid-cols-2 gap-8 items-center">
               <div className="text-center">
                 <Image
@@ -1893,7 +1893,7 @@ export default function VendeCursosAI() {
                   height={400}
                   className="mx-auto rounded-lg"
                 />
-                <p className="mt-2">Imagen generada con GPT normal</p>
+                <p className="mt-2 text-gray-700">Imagen generada con GPT normal</p>
               </div>
               <div className="text-center">
                 <Image
@@ -1903,7 +1903,7 @@ export default function VendeCursosAI() {
                   height={400}
                   className="mx-auto rounded-lg"
                 />
-                <p className="mt-2">Ejemplo VendeCursos AI</p>
+                <p className="mt-2 text-gray-700">Ejemplo VendeCursos AI</p>
               </div>
             </div>
           </div>
@@ -1973,10 +1973,10 @@ export default function VendeCursosAI() {
           </div>
         </section>
 
-        <section className="py-16 bg-white">
+        <section className="py-16 bg-white text-gray-800">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-center mb-8">🛠️ Especificaciones Técnicas</h2>
-            <ul className="max-w-3xl mx-auto text-lg space-y-4 list-none">
+            <h2 className="text-3xl font-bold text-center mb-8 bg-gradient-to-r from-orange-500 via-pink-500 to-cyan-500 bg-clip-text text-transparent">🛠️ Especificaciones Técnicas</h2>
+            <ul className="max-w-3xl mx-auto text-lg space-y-4 list-none text-gray-700">
               <li>📱 Cuentas gratuitas: genera hasta 5 anuncios al día por cuenta desde cualquier dispositivo.</li>
               <li>⚡ Con planes de pago de ChatGPT: hasta 5 anuncios por minuto.</li>
               <li>📐 Tamaños disponibles: 1024×1024, 1024×1792 y 1792×1024 px.</li>

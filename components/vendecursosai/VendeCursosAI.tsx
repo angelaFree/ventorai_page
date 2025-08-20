@@ -1649,16 +1649,12 @@ export default function VendeCursosAI() {
               </div>
 
               <h1 className="text-5xl md:text-7xl font-black mb-6 bg-gradient-to-r from-yellow-300 to-white bg-clip-text text-transparent leading-tight">
-                Crea anuncios para tus cursos en segundos con VendeCursos AI
+                Anuncios para tus Cursos con IA
               </h1>
 
               <p className="text-xl md:text-2xl mb-8 text-cyan-100 max-w-3xl mx-auto leading-relaxed">
-                Asistente montado en ChatGPT que genera flyers y anuncios para cursos online.
-                Olvídate de Canva y diseñadores: en segundos tendrás piezas listas para vender.
-              </p>
-
-              <p className="text-xl md:text-2xl mb-8 text-cyan-100 max-w-3xl mx-auto leading-relaxed">
-                Solo $4.9/mes al precio de un café (antes $45). Recuperas la inversión con tu primera venta.
+                Asistente generador de anuncios para cursos online. Olvídate de Canva y
+                diseñadores: en segundos tendrás flyers listos para vender.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
@@ -1670,6 +1666,7 @@ export default function VendeCursosAI() {
                   <RocketIcon />
                   <span className="ml-3">
                     Comprar por <CountryPriceText prices={priceMap} />
+                    <span className="text-sm align-top">/mes</span>
                   </span>
                 </button>
 
@@ -1687,39 +1684,6 @@ export default function VendeCursosAI() {
             </div>
           </div>
         </section>
-        <section className="py-16 bg-white">
-          <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-center mb-8">¿Qué ofrece VendeCursos AI?</h2>
-            <ul className="max-w-3xl mx-auto text-lg space-y-4 list-disc list-inside">
-              <li>Cuentas gratuitas: genera hasta 5 anuncios al día por cuenta desde cualquier dispositivo.</li>
-              <li>Con planes de pago de ChatGPT: hasta 5 anuncios por minuto.</li>
-              <li>Tamaños disponibles: 1024×1024, 1024×1792 y 1792×1024 px.</li>
-              <li>Motor de imágenes de ChatGPT combinado con tecnología Ventor para anuncios de alta calidad.</li>
-              <li>Bono: ebook de prompts y acceso a grupo exclusivo de usuarios.</li>
-            </ul>
-          </div>
-        </section>
-
-        <section className="py-16 bg-gray-50">
-          <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-center mb-8">Comparativa de resultados</h2>
-            <div className="grid md:grid-cols-3 gap-8 items-center">
-              <div className="text-center">
-                <Image src="https://placehold.co/300x400" alt="Imagen GPT" width={300} height={400} className="mx-auto rounded-lg" />
-                <p className="mt-2">Imagen generada con GPT normal</p>
-              </div>
-              <div className="text-center">
-                <Image src="https://placehold.co/300x400?text=IA" alt="Imagen otra IA" width={300} height={400} className="mx-auto rounded-lg" />
-                <p className="mt-2">Otras IA</p>
-              </div>
-              <div className="text-center">
-                <Image src="https://placehold.co/300x400?text=VendeCursosAI" alt="Anuncio VendeCursos AI" width={300} height={400} className="mx-auto rounded-lg" />
-                <p className="mt-2">Ejemplo VendeCursos AI</p>
-              </div>
-            </div>
-          </div>
-        </section>
-
         <CarouselFlyers flyers={flyersVerticalGroup1} itemType="vertical" />
 
         <CarouselFlyers flyers={flyersSquareGroup1} itemType="square" />
@@ -1736,8 +1700,8 @@ export default function VendeCursosAI() {
                     Modelos Siempre Actualizados
                   </h3>
                   <p className="text-gray-600 leading-relaxed">
-                    Acceso a los patrones más virales extraídos directamente de
-                    Facebook Ads Library cada semana.
+                    La API de Ventor se conecta con anuncios actuales de Facebook Ads,
+                    TikTok y más.
                   </p>
                 </div>
               </div>
@@ -1763,11 +1727,10 @@ export default function VendeCursosAI() {
                     <TargetIcon />
                   </div>
                   <h3 className="text-2xl font-bold text-gray-800 mb-4">
-                    Para Cualquier Industria
+                    Para Cualquier Curso
                   </h3>
                   <p className="text-gray-600 leading-relaxed">
-                    Retail, tech, food, fitness, educación... Diseños
-                    optimizados para todas las redes sociales.
+                    Cursos de cualquier temática, optimizados para todas las redes sociales.
                   </p>
                 </div>
               </div>
@@ -1879,11 +1842,11 @@ export default function VendeCursosAI() {
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
               <h2 className="text-4xl md:text-5xl font-black text-gray-800 mb-6">
-                Cómo Funciona la Magia
+                Cómo Funciona
               </h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                Tecnología de IA avanzada que analiza millones de anuncios
-                exitosos para crear tus diseños perfectos
+                Te comunicas con GPT, GPT se conecta con la API de Ventor y Ventor
+                envía la orden al motor de imágenes de GPT para generar tu anuncio.
               </p>
             </div>
 
@@ -1892,39 +1855,24 @@ export default function VendeCursosAI() {
                 <div className="w-24 h-24 bg-gradient-to-r from-orange-500 to-pink-500 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
                   <span className="text-3xl font-black text-white">1</span>
                 </div>
-                <h3 className="text-2xl font-bold text-gray-800 mb-4">
-                  Conexión Automática
-                </h3>
-                <p className="text-gray-600 leading-relaxed">
-                  Nos conectamos a Facebook Ads Library, Google Trends y TikTok
-                  Ads Library, basándonos en indicadores.{" "}
-                </p>
+                <h3 className="text-2xl font-bold text-gray-800 mb-4">Te comunicas con GPT</h3>
+                <p className="text-gray-600 leading-relaxed">Le dices a GPT qué necesita tu curso.</p>
               </div>
 
               <div className="text-center group">
                 <div className="w-24 h-24 bg-gradient-to-r from-pink-500 to-cyan-500 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
                   <span className="text-3xl font-black text-white">2</span>
                 </div>
-                <h3 className="text-2xl font-bold text-gray-800 mb-4">
-                  Extracción de Patrones
-                </h3>
-                <p className="text-gray-600 leading-relaxed">
-                  Nuestra IA identifica los elementos visuales, colores,
-                  tipografías y layouts que generan más conversiones.
-                </p>
+                <h3 className="text-2xl font-bold text-gray-800 mb-4">GPT llama a Ventor</h3>
+                <p className="text-gray-600 leading-relaxed">GPT se comunica con la API de Ventor para procesar tu pedido.</p>
               </div>
 
               <div className="text-center group">
                 <div className="w-24 h-24 bg-gradient-to-r from-cyan-500 to-purple-500 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
                   <span className="text-3xl font-black text-white">3</span>
                 </div>
-                <h3 className="text-2xl font-bold text-gray-800 mb-4">
-                  Generación Instantánea
-                </h3>
-                <p className="text-gray-600 leading-relaxed">
-                  Describes tu producto o servicio y obtienes flyers
-                  personalizados basados en los patrones más exitosos.
-                </p>
+                <h3 className="text-2xl font-bold text-gray-800 mb-4">Ventor crea tu anuncio</h3>
+                <p className="text-gray-600 leading-relaxed">Ventor ordena al motor de imágenes de GPT y obtienes tu flyer al instante.</p>
               </div>
             </div>
           </div>
@@ -1932,6 +1880,35 @@ export default function VendeCursosAI() {
 
         <CarouselFlyers flyers={flyersVerticalGroup3} itemType="vertical" />
         <CarouselFlyers flyers={flyersSquareGroup3} itemType="square" />
+
+        <section className="py-16 bg-gray-50">
+          <div className="container mx-auto px-4">
+            <h2 className="text-3xl font-bold text-center mb-8">Comparativa de resultados</h2>
+            <div className="grid md:grid-cols-2 gap-8 items-center">
+              <div className="text-center">
+                <Image
+                  src="https://placehold.co/300x400"
+                  alt="Imagen GPT"
+                  width={300}
+                  height={400}
+                  className="mx-auto rounded-lg"
+                />
+                <p className="mt-2">Imagen generada con GPT normal</p>
+              </div>
+              <div className="text-center">
+                <Image
+                  src="https://placehold.co/300x400?text=VendeCursosAI"
+                  alt="Anuncio VendeCursos AI"
+                  width={300}
+                  height={400}
+                  className="mx-auto rounded-lg"
+                />
+                <p className="mt-2">Ejemplo VendeCursos AI</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Testimonials Carousel */}
         <section className="py-16 bg-gradient-to-r from-gray-900 to-gray-800 text-white">
           <div className="container mx-auto px-4">
@@ -1995,15 +1972,29 @@ export default function VendeCursosAI() {
             </div>
           </div>
         </section>
+
+        <section className="py-16 bg-white">
+          <div className="container mx-auto px-4">
+            <h2 className="text-3xl font-bold text-center mb-8">🛠️ Especificaciones Técnicas</h2>
+            <ul className="max-w-3xl mx-auto text-lg space-y-4 list-none">
+              <li>📱 Cuentas gratuitas: genera hasta 5 anuncios al día por cuenta desde cualquier dispositivo.</li>
+              <li>⚡ Con planes de pago de ChatGPT: hasta 5 anuncios por minuto.</li>
+              <li>📐 Tamaños disponibles: 1024×1024, 1024×1792 y 1792×1024 px.</li>
+              <li>🤖 Motor de imágenes de ChatGPT combinado con tecnología Ventor para anuncios de alta calidad.</li>
+            </ul>
+          </div>
+        </section>
+
         <CarouselFlyers flyers={flyersVerticalGroup4} itemType="vertical" />
         <CarouselFlyers flyers={flyersSquareGroup4} itemType="square" />
         {/* Pricing & Final CTA */}
         <section className="py-20 bg-gradient-to-r from-orange-500 via-pink-500 to-cyan-500 text-white">
           <div className="container mx-auto px-4 text-center">
             <div className="max-w-4xl mx-auto">
-              <h2 className="text-5xl md:text-6xl font-black mb-8">
-                Solo <CountryPriceText prices={priceMap} />
+              <h2 className="text-5xl md:text-6xl font-black mb-2">
+                Solo <CountryPriceText prices={priceMap} /><span className="text-3xl align-top">/mes</span>
               </h2>
+              <p className="text-xl mb-8"><span className="line-through opacity-80">$80</span> antes</p>
 
               <div className="bg-white/10 backdrop-blur-sm rounded-3xl p-8 mb-12">
                 <div className="grid md:grid-cols-2 gap-8 items-center">
@@ -2044,12 +2035,22 @@ export default function VendeCursosAI() {
                           Soporte prioritario
                         </span>
                       </div>
+                      <div className="flex items-center">
+                        <CheckCircleIcon />
+                        <span className="text-lg ml-3">
+                          Bonus: ebook de prompts y acceso a grupo exclusivo
+                        </span>
+                      </div>
                     </div>
                   </div>
 
                   <div className="text-center">
                     <div className="text-6xl font-black mb-4">
                       <CountryPriceText prices={priceMap} />
+                      <span className="text-2xl align-top">/mes</span>
+                    </div>
+                    <div className="text-xl text-cyan-100 mb-2">
+                      <span className="line-through opacity-80">$80</span> antes
                     </div>
                     <div className="text-xl text-cyan-100 mb-8">por oferta</div>
 
@@ -2091,6 +2092,7 @@ export default function VendeCursosAI() {
             className="bg-gradient-to-r from-orange-500 to-pink-500 hover:from-orange-600 hover:to-pink-600 text-white font-bold px-8 py-4 rounded-full shadow-2xl animate-pulse"
           >
             Comprar por <CountryPriceText prices={priceMap} />
+            <span className="text-sm align-top">/mes</span>
           </button>
         </div>
       </div>

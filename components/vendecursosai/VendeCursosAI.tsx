@@ -6,6 +6,7 @@ import CountryPriceText from "../flyerIaLanding/CountryPriceText";
 import CarouselFlyers, { Flyer } from "../flyerIaLanding/CarouselFlyers";
 import EspecificacionesTecnicas from "./Especificaciones";
 
+
 export default function VendeCursosAI() {
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
   const [currentFlyer, setCurrentFlyer] = useState(0);
@@ -426,6 +427,17 @@ export default function VendeCursosAI() {
     </svg>
   );
 
+
+
+const handleComprar = async () => {
+  const ReactPixel = (await import("react-facebook-pixel")).default;
+  ReactPixel.track("InitiateCheckout"); // sin parámetros, simple
+  window.open(linkPagoHotmart, "_blank", "noopener,noreferrer");
+};
+
+
+
+  
   const priceMap = {
     US: 4.9,
     PE: 19.17,
@@ -494,7 +506,7 @@ export default function VendeCursosAI() {
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
                 <button
                   type="button"
-                  onClick={() => window.open(linkPagoHotmart, "_blank")}
+                  onClick={handleComprar}
                   className="inline-flex items-center justify-center rounded-full text-xl font-bold bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-12 py-6 shadow-2xl transform hover:scale-105 transition-all duration-300"
                 >
                   <RocketIcon />
@@ -937,7 +949,7 @@ export default function VendeCursosAI() {
 
                     <button
                       type="button"
-                      onClick={() => window.open(linkPagoHotmart, "_blank")}
+                      onClick={handleComprar}
                       className="inline-flex items-center justify-center w-full md:w-auto rounded-full bg-white text-gray-900 hover:bg-gray-100 font-bold text-lg md:text-xl px-10 py-5 shadow-2xl transition-all duration-300 hover:scale-[1.03] focus:outline-none focus:ring-2 focus:ring-white/70"
                     >
                       <RocketIcon />
@@ -970,7 +982,7 @@ export default function VendeCursosAI() {
         <div className="fixed bottom-6 left-1/2 transform -translate-x-1/2 z-50">
           <button
             type="button"
-            onClick={() => window.open(linkPagoHotmart, "_blank")}
+            onClick={handleComprar}
             className="bg-gradient-to-r from-orange-500 to-pink-500 hover:from-orange-600 hover:to-pink-600 text-white font-bold px-8 py-4 rounded-full shadow-2xl animate-pulse"
           >
             Comprar por <CountryPriceText prices={priceMap} />

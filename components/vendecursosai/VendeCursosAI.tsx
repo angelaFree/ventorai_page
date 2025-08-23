@@ -9,220 +9,182 @@ import EspecificacionesTecnicas from "./Especificaciones";
 export default function VendeCursosAI() {
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
   const [currentFlyer, setCurrentFlyer] = useState(0);
-  const linkPagoHotmart =
-    "https://pay.hotmart.com/B101507725R";
+  const linkPagoHotmart = "https://pay.hotmart.com/B101507725R";
 
   const flyersVertical: Flyer[] = [
     {
       id: 1,
       category: "General",
-      image:
-        "/vendecursos/carrusel_vertical_1/1.png",
+      image: "/vendecursos/carrusel_vertical_1/1.png",
     },
     {
       id: 2,
       category: "General",
-      image:
-        "/vendecursos/carrusel_vertical_1/2.png",
+      image: "/vendecursos/carrusel_vertical_1/2.png",
     },
     {
       id: 3,
       category: "General",
-      image:
-        "/vendecursos/carrusel_vertical_1/3.png",
+      image: "/vendecursos/carrusel_vertical_1/3.png",
     },
     {
       id: 4,
       category: "General",
-      image:
-        "/vendecursos/carrusel_vertical_1/4.png",
+      image: "/vendecursos/carrusel_vertical_1/4.png",
     },
     {
       id: 5,
       category: "General",
-      image:
-        "/vendecursos/carrusel_vertical_1/5.png",
+      image: "/vendecursos/carrusel_vertical_1/5.png",
     },
     {
       id: 6,
       category: "General",
-      image:
-        "/vendecursos/carrusel_vertical_1/6.png",
+      image: "/vendecursos/carrusel_vertical_1/6.png",
     },
     {
       id: 7,
       category: "General",
-      image:
-        "/vendecursos/carrusel_vertical_1/7.png",
+      image: "/vendecursos/carrusel_vertical_1/7.png",
     },
     {
       id: 8,
       category: "General",
-      image:
-        "/vendecursos/carrusel_vertical_1/8.png",
+      image: "/vendecursos/carrusel_vertical_1/8.png",
     },
     {
       id: 9,
       category: "General",
-      image:
-        "/vendecursos/carrusel_vertical_1/9.png",
+      image: "/vendecursos/carrusel_vertical_1/9.png",
     },
     {
       id: 10,
       category: "General",
-      image:
-        "/vendecursos/carrusel_vertical_1/10.png",
+      image: "/vendecursos/carrusel_vertical_1/10.png",
     },
     {
       id: 11,
       category: "General",
-      image:
-        "/vendecursos/carrusel_vertical_1/11.png",
-    }
-    
+      image: "/vendecursos/carrusel_vertical_1/11.png",
+    },
   ];
   const flyersSquare: Flyer[] = [
     {
       id: 1,
       category: "General",
-      image:
-        "/vendecursos/carrusel_cuadrado_1/1.png",
+      image: "/vendecursos/carrusel_cuadrado_1/1.png",
     },
     {
       id: 2,
       category: "General",
-      image:
-        "/vendecursos/carrusel_cuadrado_1/2.png",
+      image: "/vendecursos/carrusel_cuadrado_1/2.png",
     },
     {
       id: 3,
       category: "General",
-      image:
-        "/vendecursos/carrusel_cuadrado_1/3.png",
+      image: "/vendecursos/carrusel_cuadrado_1/3.png",
     },
     {
       id: 4,
       category: "General",
-      image:
-        "/vendecursos/carrusel_cuadrado_1/4.png",
+      image: "/vendecursos/carrusel_cuadrado_1/4.png",
     },
     {
       id: 5,
       category: "General",
-      image:
-        "/vendecursos/carrusel_cuadrado_1/5.png",
+      image: "/vendecursos/carrusel_cuadrado_1/5.png",
     },
     {
       id: 6,
       category: "General",
-      image:
-        "/vendecursos/carrusel_cuadrado_1/6.png",
+      image: "/vendecursos/carrusel_cuadrado_1/6.png",
     },
     {
       id: 7,
       category: "General",
-      image:
-        "/vendecursos/carrusel_cuadrado_1/7.png",
+      image: "/vendecursos/carrusel_cuadrado_1/7.png",
     },
     {
       id: 8,
       category: "General",
-      image:
-        "/vendecursos/carrusel_cuadrado_1/8.png",
+      image: "/vendecursos/carrusel_cuadrado_1/8.png",
     },
     {
       id: 9,
       category: "General",
-      image:
-        "/vendecursos/carrusel_cuadrado_1/9.png",
+      image: "/vendecursos/carrusel_cuadrado_1/9.png",
     },
     {
       id: 10,
       category: "General",
-      image:
-        "/vendecursos/carrusel_cuadrado_1/10.png",
+      image: "/vendecursos/carrusel_cuadrado_1/10.png",
     },
     {
       id: 11,
       category: "General",
-      image:
-        "/vendecursos/carrusel_cuadrado_1/11.png",
+      image: "/vendecursos/carrusel_cuadrado_1/11.png",
     },
     {
       id: 12,
       category: "General",
-      image:
-        "/vendecursos/carrusel_cuadrado_1/12.png",
+      image: "/vendecursos/carrusel_cuadrado_1/12.png",
     },
     {
       id: 13,
       category: "General",
-      image:
-        "/vendecursos/carrusel_cuadrado_1/13.png",
+      image: "/vendecursos/carrusel_cuadrado_1/13.png",
     },
     {
       id: 14,
       category: "General",
-      image:
-        "/vendecursos/carrusel_cuadrado_1/14.png",
+      image: "/vendecursos/carrusel_cuadrado_1/14.png",
     },
     {
       id: 15,
       category: "General",
-      image:
-        "/vendecursos/carrusel_cuadrado_1/15.png",
+      image: "/vendecursos/carrusel_cuadrado_1/15.png",
     },
     {
       id: 16,
       category: "General",
-      image:
-        "/vendecursos/carrusel_cuadrado_1/16.png",
+      image: "/vendecursos/carrusel_cuadrado_1/16.png",
     },
     {
       id: 17,
       category: "General",
-      image:
-        "/vendecursos/carrusel_cuadrado_1/17.png",
+      image: "/vendecursos/carrusel_cuadrado_1/17.png",
     },
     {
       id: 18,
       category: "General",
-      image:
-        "/vendecursos/carrusel_cuadrado_1/18.png",
+      image: "/vendecursos/carrusel_cuadrado_1/18.png",
     },
     {
       id: 19,
       category: "General",
-      image:
-        "/vendecursos/carrusel_cuadrado_1/19.png",
+      image: "/vendecursos/carrusel_cuadrado_1/19.png",
     },
     {
       id: 20,
       category: "General",
-      image:
-        "/vendecursos/carrusel_cuadrado_1/20.png",
+      image: "/vendecursos/carrusel_cuadrado_1/20.png",
     },
     {
       id: 21,
       category: "General",
-      image:
-        "/vendecursos/carrusel_cuadrado_1/21.png",
+      image: "/vendecursos/carrusel_cuadrado_1/21.png",
     },
     {
       id: 22,
       category: "General",
-      image:
-        "/vendecursos/carrusel_cuadrado_1/22.png",
+      image: "/vendecursos/carrusel_cuadrado_1/22.png",
     },
     {
       id: 23,
       category: "General",
-      image:
-        "/vendecursos/carrusel_cuadrado_1/23.png",
-    }
-   
+      image: "/vendecursos/carrusel_cuadrado_1/23.png",
+    },
   ];
-
 
   const testimonials = [
     {
@@ -269,15 +231,13 @@ export default function VendeCursosAI() {
   }
 
   // --- Agrupando flyersSquare en 4 bloques ---
-  const [
-    flyersSquareGroup1,
-    flyersSquareGroup4,
-  ] = splitIntoGroups(flyersSquare, 2);
+  const [flyersSquareGroup1, flyersSquareGroup4] = splitIntoGroups(
+    flyersSquare,
+    2
+  );
 
   // --- Agrupando flyersVertical en 4 bloques ---
-  const [
-    flyersVerticalGroup1,
-  ] = splitIntoGroups(flyersVertical, 1);
+  const [flyersVerticalGroup1] = splitIntoGroups(flyersVertical, 1);
 
   // Ya tienes:
   // flyersSquareGroup1..4  (each ~145/4 items)
@@ -289,7 +249,6 @@ export default function VendeCursosAI() {
     }, 4000);
     return () => clearInterval(interval);
   }, [testimonials.length]);
-
 
   // Icons as SVG components
   const SparklesIcon = () => (
@@ -492,9 +451,20 @@ export default function VendeCursosAI() {
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-                <button
-                  type="button"
-                  onClick={() => window.open(linkPagoHotmart, "_blank")}
+                <a
+                  href={linkPagoHotmart}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() => {
+                    // Evento estándar: aparecerá como “Iniciar pago”
+                    // @ts-ignore
+                    window.fbq?.("track", "InitiateCheckout", {
+                      content_name: "VendeCursos AI",
+                      num_items: 1,
+                      value: 4.9,
+                      currency: "USD",
+                    });
+                  }}
                   className="inline-flex items-center justify-center rounded-full text-xl font-bold bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-12 py-6 shadow-2xl transform hover:scale-105 transition-all duration-300"
                 >
                   <RocketIcon />
@@ -502,7 +472,7 @@ export default function VendeCursosAI() {
                     Comprar por <CountryPriceText prices={priceMap} />
                     <span className="text-sm align-top">/mes</span>
                   </span>
-                </button>
+                </a>
 
                 <div className="flex items-center text-cyan-100">
                   <StarIcon filled />
@@ -656,7 +626,6 @@ export default function VendeCursosAI() {
             </div>
           </div>
         </section>
-
 
         <section className="py-20 bg-gradient-to-r from-purple-600 via-pink-600 to-orange-600">
           <div className="container mx-auto px-4">
@@ -865,7 +834,6 @@ export default function VendeCursosAI() {
             <div className="max-w-5xl mx-auto">
               <h2 className="text-4xl md:text-5xl font-black mb-6">
                 Aprovecha la oferta ahora
-
               </h2>
 
               {/* Card principal */}
@@ -896,9 +864,7 @@ export default function VendeCursosAI() {
                       </div>
                       <div className="flex items-center">
                         <CheckCircleIcon />
-                        <span className="text-lg ml-3">
-                          Consejos de Venta
-                        </span>
+                        <span className="text-lg ml-3">Consejos de Venta</span>
                       </div>
                       <div className="flex items-center">
                         <CheckCircleIcon />
@@ -906,53 +872,59 @@ export default function VendeCursosAI() {
                           Soporte prioritario
                         </span>
                       </div>
-                                            <div className="flex items-center">
+                      <div className="flex items-center">
                         <CheckCircleIcon />
                         <span className="text-lg ml-3">
                           Usalo en las cuentas que desees
                         </span>
                       </div>
-
                     </div>
                   </div>
 
                   {/* Panel de compra */}
                   {/* Panel de compra */}
-<div className="text-center md:text-left">
-  <div className="text-5xl md:text-6xl font-black mb-3">
-    <CountryPriceText prices={priceMap} />
-    <span className="ml-1 align-baseline text-base md:text-xl font-semibold opacity-70">/mes</span>
-  </div>
+                  <div className="text-center md:text-left">
+                    <div className="text-5xl md:text-6xl font-black mb-3">
+                      <CountryPriceText prices={priceMap} />
+                      <span className="ml-1 align-baseline text-base md:text-xl font-semibold opacity-70">
+                        /mes
+                      </span>
+                    </div>
 
-  <div className="text-base md:text-lg text-white/90 mb-2">
-    <span className="line-through/80 line-through mr-2">$80</span>antes
-  </div>
-  <div className="text-base md:text-lg text-white/90 mb-8">precio promocional por oferta</div>
+                    <div className="text-base md:text-lg text-white/90 mb-2">
+                      <span className="line-through/80 line-through mr-2">
+                        $80
+                      </span>
+                      antes
+                    </div>
+                    <div className="text-base md:text-lg text-white/90 mb-8">
+                      precio promocional por oferta
+                    </div>
 
-  <a
-    href={linkPagoHotmart}
-    target="_blank"
-    rel="noopener noreferrer"
-    onClick={() => {
-      // @ts-ignore
-      window.fbq?.('trackCustom','CTA_Click',{ placement:'pricing_panel', destination:'hotmart' });
-      // @ts-ignore
-      window.fbq?.('track','InitiateCheckout',{
-        content_name:'VendeCursos AI',
-        num_items:1,
-        value:4.9,
-        currency:'USD',
-      });
-    }}
-    className="inline-flex items-center justify-center w-full md:w-auto rounded-full bg-white text-gray-900 hover:bg-gray-100 font-bold text-lg md:text-xl px-10 py-5 shadow-2xl transition-all duration-300 hover:scale-[1.03] focus:outline-none focus:ring-2 focus:ring-white/70"
-  >
-    <RocketIcon />
-    <span className="ml-3">Comprar ahora</span>
-  </a>
+                    <a
+                      href={linkPagoHotmart}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      onClick={() => {
+                        // Evento estándar: aparecerá como “Iniciar pago”
+                        // @ts-ignore
+                        window.fbq?.("track", "InitiateCheckout", {
+                          content_name: "VendeCursos AI",
+                          num_items: 1,
+                          value: 4.9,
+                          currency: "USD",
+                        });
+                      }}
+                      className="inline-flex items-center justify-center w-full md:w-auto rounded-full bg-white text-gray-900 hover:bg-gray-100 font-bold text-lg md:text-xl px-10 py-5 shadow-2xl transition-all duration-300 hover:scale-[1.03] focus:outline-none focus:ring-2 focus:ring-white/70"
+                    >
+                      <RocketIcon />
+                      <span className="ml-3">Comprar ahora</span>
+                    </a>
 
-  <p className="text-sm text-white/80 mt-4">Cancela cuando quieras • Sin compromisos</p>
-</div>
-
+                    <p className="text-sm text-white/80 mt-4">
+                      Cancela cuando quieras • Sin compromisos
+                    </p>
+                  </div>
                 </div>
               </div>
 
@@ -973,14 +945,25 @@ export default function VendeCursosAI() {
 
         {/* Fixed CTA Buttons */}
         <div className="fixed bottom-6 left-1/2 transform -translate-x-1/2 z-50">
-          <button
-            type="button"
-            onClick={() => window.open(linkPagoHotmart, "_blank")}
+          <a
+            href={linkPagoHotmart}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => {
+              // Evento estándar: aparecerá como “Iniciar pago”
+              // @ts-ignore
+              window.fbq?.("track", "InitiateCheckout", {
+                content_name: "VendeCursos AI",
+                num_items: 1,
+                value: 4.9,
+                currency: "USD",
+              });
+            }}
             className="bg-gradient-to-r from-orange-500 to-pink-500 hover:from-orange-600 hover:to-pink-600 text-white font-bold px-8 py-4 rounded-full shadow-2xl animate-pulse"
           >
             Comprar por <CountryPriceText prices={priceMap} />
             <span className="text-sm align-top">/mes</span>
-          </button>
+          </a>
         </div>
       </div>
     </>

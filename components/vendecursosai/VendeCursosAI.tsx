@@ -10,7 +10,7 @@ export default function VendeCursosAI() {
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
   const [currentFlyer, setCurrentFlyer] = useState(0);
   const linkPagoHotmart =
-    "https://pay.hotmart.com/G100299066R?off=xhs7uuy4&checkoutMode=10";
+    "https://pay.hotmart.com/B101507725R";
 
   const flyersVertical: Flyer[] = [
     {
@@ -588,7 +588,7 @@ export default function VendeCursosAI() {
                 <div className="aspect-[9/16] bg-black rounded-3xl overflow-hidden shadow-2xl relative z-10">
                   <iframe
                     className="w-full h-full"
-                    src="https://www.youtube.com/embed/GECrfns4fwQ?rel=0"
+                    src="https://www.youtube.com/embed/QKP4AYBVMjQ?rel=0"
                     title="Vídeo VendeCursos AI"
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -884,15 +884,10 @@ export default function VendeCursosAI() {
                       <div className="flex items-center">
                         <CheckCircleIcon />
                         <span className="text-lg ml-3">
-                          Actualizaciones semanales
+                          Actualizaciones Mensuales
                         </span>
                       </div>
-                      <div className="flex items-center">
-                        <CheckCircleIcon />
-                        <span className="text-lg ml-3">
-                          Nuevas plantillas cada semana
-                        </span>
-                      </div>
+
                       <div className="flex items-center">
                         <CheckCircleIcon />
                         <span className="text-lg ml-3">
@@ -902,7 +897,7 @@ export default function VendeCursosAI() {
                       <div className="flex items-center">
                         <CheckCircleIcon />
                         <span className="text-lg ml-3">
-                          Manual de uso completo
+                          Consejos de Venta
                         </span>
                       </div>
                       <div className="flex items-center">
@@ -911,12 +906,13 @@ export default function VendeCursosAI() {
                           Soporte prioritario
                         </span>
                       </div>
-                      <div className="flex items-center">
+                                            <div className="flex items-center">
                         <CheckCircleIcon />
                         <span className="text-lg ml-3">
-                          Bonus: ebook de prompts y acceso a grupo exclusivo
+                          Usalo en las cuentas que desees
                         </span>
                       </div>
+
                     </div>
                   </div>
 

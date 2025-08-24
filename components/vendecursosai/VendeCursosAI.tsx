@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useMemo } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import CountryPriceText from "../flyerIaLanding/CountryPriceText";
 import CarouselFlyers, { Flyer } from "../flyerIaLanding/CarouselFlyers";
@@ -10,7 +10,10 @@ import EspecificacionesTecnicas from "./Especificaciones";
 export default function VendeCursosAI() {
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
   const [currentFlyer, setCurrentFlyer] = useState(0);
-  const isVariantA = useMemo(() => Math.random() < 0.5, []);
+  const [isVariantA, setIsVariantA] = useState(true);
+  useEffect(() => {
+    setIsVariantA(Math.random() < 0.5);
+  }, []);
   const linkPagoHotmart =
     "https://pay.hotmart.com/B101507725R?checkoutMode=10";
 

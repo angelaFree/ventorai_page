@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 import Image from "next/image";
 import CountryPriceText from "../flyerIaLanding/CountryPriceText";
 import CarouselFlyers, { Flyer } from "../flyerIaLanding/CarouselFlyers";
@@ -10,6 +10,7 @@ import EspecificacionesTecnicas from "./Especificaciones";
 export default function VendeCursosAI() {
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
   const [currentFlyer, setCurrentFlyer] = useState(0);
+  const isVariantA = useMemo(() => Math.random() < 0.5, []);
   const linkPagoHotmart =
     "https://pay.hotmart.com/B101507725R?checkoutMode=10";
 
@@ -530,58 +531,61 @@ const handleComprar = async () => {
         </section>
 
         <CarouselFlyers flyers={flyersSquareGroup1} itemType="square" />
-        {/* Benefits Carousel */}
-        <section className="py-16 bg-white">
-          <div className="container mx-auto px-4">
-            <div className="grid md:grid-cols-3 gap-8">
-              <div className="group hover:shadow-2xl transition-all duration-500 border-0 bg-gradient-to-br from-orange-100 to-orange-50 rounded-lg shadow-sm">
-                <div className="p-8 text-center">
-                  <div className="w-20 h-20 bg-gradient-to-r from-orange-500 to-pink-500 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
-                    <TrendingUpIcon />
+        {isVariantA && (
+          <>
+            {/* Benefits Carousel */}
+            <section className="py-16 bg-white">
+              <div className="container mx-auto px-4">
+                <div className="grid md:grid-cols-3 gap-8">
+                  <div className="group hover:shadow-2xl transition-all duration-500 border-0 bg-gradient-to-br from-orange-100 to-orange-50 rounded-lg shadow-sm">
+                    <div className="p-8 text-center">
+                      <div className="w-20 h-20 bg-gradient-to-r from-orange-500 to-pink-500 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <TrendingUpIcon />
+                      </div>
+                      <h3 className="text-2xl font-bold text-gray-800 mb-4">
+                        Modelos Siempre Actualizados
+                      </h3>
+                      <p className="text-gray-600 leading-relaxed">
+                        La API de Ventor se conecta con anuncios actuales de
+                        Facebook Ads, TikTok y más.
+                      </p>
+                    </div>
                   </div>
-                  <h3 className="text-2xl font-bold text-gray-800 mb-4">
-                    Modelos Siempre Actualizados
-                  </h3>
-                  <p className="text-gray-600 leading-relaxed">
-                    La API de Ventor se conecta con anuncios actuales de
-                    Facebook Ads, TikTok y más.
-                  </p>
+
+                  <div className="group hover:shadow-2xl transition-all duration-500 border-0 bg-gradient-to-br from-pink-100 to-pink-50 rounded-lg shadow-sm">
+                    <div className="p-8 text-center">
+                      <div className="w-20 h-20 bg-gradient-to-r from-pink-500 to-cyan-500 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <ZapIcon />
+                      </div>
+                      <h3 className="text-2xl font-bold text-gray-800 mb-4">
+                        Sin Curva de Aprendizaje
+                      </h3>
+                      <p className="text-gray-600 leading-relaxed">
+                        Olvídate de diseñadores caros y herramientas complicadas.
+                        Solo describe y obtén resultados profesionales.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="group hover:shadow-2xl transition-all duration-500 border-0 bg-gradient-to-br from-cyan-100 to-cyan-50 rounded-lg shadow-sm">
+                    <div className="p-8 text-center">
+                      <div className="w-20 h-20 bg-gradient-to-r from-cyan-500 to-purple-500 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <TargetIcon />
+                      </div>
+                      <h3 className="text-2xl font-bold text-gray-800 mb-4">
+                        Para Cualquier Curso
+                      </h3>
+                      <p className="text-gray-600 leading-relaxed">
+                        Cursos de cualquier temática, optimizados para todas las
+                        redes sociales.
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
-
-              <div className="group hover:shadow-2xl transition-all duration-500 border-0 bg-gradient-to-br from-pink-100 to-pink-50 rounded-lg shadow-sm">
-                <div className="p-8 text-center">
-                  <div className="w-20 h-20 bg-gradient-to-r from-pink-500 to-cyan-500 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
-                    <ZapIcon />
-                  </div>
-                  <h3 className="text-2xl font-bold text-gray-800 mb-4">
-                    Sin Curva de Aprendizaje
-                  </h3>
-                  <p className="text-gray-600 leading-relaxed">
-                    Olvídate de diseñadores caros y herramientas complicadas.
-                    Solo describe y obtén resultados profesionales.
-                  </p>
-                </div>
-              </div>
-
-              <div className="group hover:shadow-2xl transition-all duration-500 border-0 bg-gradient-to-br from-cyan-100 to-cyan-50 rounded-lg shadow-sm">
-                <div className="p-8 text-center">
-                  <div className="w-20 h-20 bg-gradient-to-r from-cyan-500 to-purple-500 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
-                    <TargetIcon />
-                  </div>
-                  <h3 className="text-2xl font-bold text-gray-800 mb-4">
-                    Para Cualquier Curso
-                  </h3>
-                  <p className="text-gray-600 leading-relaxed">
-                    Cursos de cualquier temática, optimizados para todas las
-                    redes sociales.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
+            </section>
+          </>
+        )}
         <CarouselFlyers flyers={flyersVerticalGroup1} itemType="vertical" />
 
         {/* Video Section */}
@@ -614,8 +618,10 @@ const handleComprar = async () => {
           </div>
         </section>
 
-        {/* How It Works */}
-        <section className="py-16 bg-white">
+        {isVariantA && (
+          <>
+            {/* How It Works */}
+            <section className="py-16 bg-white">
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
               <h2 className="text-4xl md:text-5xl font-black text-gray-800 mb-6">
@@ -804,9 +810,13 @@ const handleComprar = async () => {
             </div>
           </div>
         </section>
+          </>
+        )}
 
-        {/* Testimonials Carousel */}
-        <section className="py-16 bg-gradient-to-r from-gray-900 to-gray-800 text-white">
+        {isVariantA && (
+          <>
+            {/* Testimonials Carousel */}
+            <section className="py-16 bg-gradient-to-r from-gray-900 to-gray-800 text-white">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
               <h2 className="text-4xl md:text-5xl font-black mb-12">
@@ -868,6 +878,8 @@ const handleComprar = async () => {
             </div>
           </div>
         </section>
+          </>
+        )}
         <EspecificacionesTecnicas />
 
         <CarouselFlyers flyers={flyersSquareGroup4} itemType="square" />

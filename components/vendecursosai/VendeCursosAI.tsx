@@ -10,7 +10,9 @@ import EspecificacionesTecnicas from "./Especificaciones";
 export default function VendeCursosAI() {
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
   const [currentFlyer, setCurrentFlyer] = useState(0);
-  const [isVariantA, setIsVariantA] = useState(true);
+  const [isVariantA, setIsVariantA] = useState<boolean | null>(null);
+
+  // Decide the variant on the client after hydration to avoid SSR mismatches
   useEffect(() => {
     setIsVariantA(Math.random() < 0.5);
   }, []);

@@ -11,7 +11,7 @@ export default function VendeCursosAI() {
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
   const [currentFlyer, setCurrentFlyer] = useState(0);
   const linkPagoHotmart =
-    "https://pay.hotmart.com/B101507725R";
+    "https://pay.hotmart.com/B101507725R?checkoutMode=10";
 
   const flyersVertical: Flyer[] = [
     {

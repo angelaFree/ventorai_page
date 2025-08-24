@@ -437,7 +437,9 @@ export default function VendeCursosAI() {
 
 const handleComprar = async () => {
   const ReactPixel = (await import("react-facebook-pixel")).default;
-  ReactPixel.track("InitiateCheckout"); // sin parámetros, simple
+  ReactPixel.track("InitiateCheckout", {
+    variant: isVariantA ? "full" : "reduced",
+  });
   window.open(linkPagoHotmart, "_blank", "noopener,noreferrer");
 };
 

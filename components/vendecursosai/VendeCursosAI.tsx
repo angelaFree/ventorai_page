@@ -35,7 +35,7 @@ export default function VendeCursosAI() {
         setTitleIndex((prev) => (prev + 1) % heroTitles.length);
         setSlideIn(true);
       }, 500);
-    }, 2000);
+    }, 4000);
     return () => {
       clearInterval(interval);
       clearTimeout(timeout);

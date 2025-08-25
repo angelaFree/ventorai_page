@@ -35,7 +35,7 @@ export default function VendeCursosAI() {
         setTitleIndex((prev) => (prev + 1) % heroTitles.length);
         setSlideIn(true);
       }, 500);
-    }, 4000);
+    }, 2000);
     return () => {
       clearInterval(interval);
       clearTimeout(timeout);
@@ -528,7 +528,7 @@ const handleComprar = async () => {
 
               <div className="overflow-hidden h-20 md:h-24">
                 <h1
-                  className={`text-5xl md:text-7xl font-black mb-6 bg-gradient-to-r from-yellow-300 to-white bg-clip-text text-transparent leading-tight transition-transform duration-500 ${slideIn ? 'translate-y-0' : '-translate-y-full'}}`
+                  className={`text-5xl md:text-7xl font-black mb-6 bg-gradient-to-r from-yellow-300 to-white bg-clip-text text-transparent leading-tight transition-transform duration-500 ${slideIn ? 'translate-y-0' : '-translate-y-full'}`}
                 >
                   {heroTitles[titleIndex]}
                 </h1>

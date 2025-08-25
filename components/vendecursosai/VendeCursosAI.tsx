@@ -472,11 +472,7 @@ const handleComprar = async () => {
 
   
   const priceMap = {
-    US: 2.9,
-    PE: 11.35,
-    MX: 68.48,
-    CO: 12.5,
-    BO: 21.86,
+    US: 2.9
   };
   return (
     <>

@@ -12,10 +12,35 @@ export default function VendeCursosAI() {
   const [currentFlyer, setCurrentFlyer] = useState(0);
   const [isVariantA, setIsVariantA] = useState<boolean | null>(null);
 
+  const heroTitles = [
+    "Vende tu curso todos los días",
+    "Anuncios listos en segundos",
+    "Convierte comunidad en ventas",
+    "Tu curso siempre visible",
+    "Contenido diario sin esfuerzo",
+  ];
+  const [titleIndex, setTitleIndex] = useState(0);
+  const [fade, setFade] = useState(true);
+
   // Decide the variant on the client after hydration to avoid SSR mismatches
   useEffect(() => {
     setIsVariantA(Math.random() < 0.5);
   }, []);
+
+  useEffect(() => {
+    let timeout: NodeJS.Timeout;
+    const interval = setInterval(() => {
+      setFade(false);
+      timeout = setTimeout(() => {
+        setTitleIndex((prev) => (prev + 1) % heroTitles.length);
+        setFade(true);
+      }, 500);
+    }, 2000);
+    return () => {
+      clearInterval(interval);
+      clearTimeout(timeout);
+    };
+  }, [heroTitles.length]);
   const linkPagoHotmart =
     "https://pay.hotmart.com/B101507725R?checkoutMode=10";
 
@@ -501,8 +526,10 @@ const handleComprar = async () => {
                 </span>
               </div>
 
-              <h1 className="text-5xl md:text-7xl font-black mb-6 bg-gradient-to-r from-yellow-300 to-white bg-clip-text text-transparent leading-tight">
-                Anuncios para tus Cursos con IA
+              <h1
+                className={`text-5xl md:text-7xl font-black mb-6 bg-gradient-to-r from-yellow-300 to-white bg-clip-text text-transparent leading-tight transition-opacity duration-500 ${fade ? 'opacity-100' : 'opacity-0'}`}
+              >
+                {heroTitles[titleIndex]}
               </h1>
 
               <p className="text-xl md:text-2xl mb-8 text-cyan-100 max-w-3xl mx-auto leading-relaxed">

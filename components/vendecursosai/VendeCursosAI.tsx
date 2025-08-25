@@ -20,7 +20,7 @@ export default function VendeCursosAI() {
     "Contenido diario sin esfuerzo",
   ];
   const [titleIndex, setTitleIndex] = useState(0);
-  const [fade, setFade] = useState(true);
+  const [slideIn, setSlideIn] = useState(true);
 
   // Decide the variant on the client after hydration to avoid SSR mismatches
   useEffect(() => {
@@ -30,12 +30,12 @@ export default function VendeCursosAI() {
   useEffect(() => {
     let timeout: NodeJS.Timeout;
     const interval = setInterval(() => {
-      setFade(false);
+      setSlideIn(false);
       timeout = setTimeout(() => {
         setTitleIndex((prev) => (prev + 1) % heroTitles.length);
-        setFade(true);
+        setSlideIn(true);
       }, 500);
-    }, 2000);
+    }, 4000);
     return () => {
       clearInterval(interval);
       clearTimeout(timeout);
@@ -472,11 +472,11 @@ const handleComprar = async () => {
 
   
   const priceMap = {
-    US: 4.9,
-    PE: 19.17,
-    MX: 115.7,
-    CO: 21.12,
-    BO: 36.93,
+    US: 2.9,
+    PE: 11.35,
+    MX: 68.48,
+    CO: 12.5,
+    BO: 21.86,
   };
   return (
     <>
@@ -526,11 +526,13 @@ const handleComprar = async () => {
                 </span>
               </div>
 
-              <h1
-                className={`text-5xl md:text-7xl font-black mb-6 bg-gradient-to-r from-yellow-300 to-white bg-clip-text text-transparent leading-tight transition-opacity duration-500 ${fade ? 'opacity-100' : 'opacity-0'}`}
-              >
-                {heroTitles[titleIndex]}
-              </h1>
+              <div className="overflow-hidden h-20 md:h-24">
+                <h1
+                  className={`text-5xl md:text-7xl font-black mb-6 bg-gradient-to-r from-yellow-300 to-white bg-clip-text text-transparent leading-tight transition-transform duration-500 ${slideIn ? 'translate-y-0' : '-translate-y-full'}}`
+                >
+                  {heroTitles[titleIndex]}
+                </h1>
+              </div>
 
               <p className="text-xl md:text-2xl mb-8 text-cyan-100 max-w-3xl mx-auto leading-relaxed">
                 Asistente generador de anuncios para cursos online. Olvídate de

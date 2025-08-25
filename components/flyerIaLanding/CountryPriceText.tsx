@@ -26,14 +26,21 @@ export default function CountryPriceText({ prices }: CountryPriceTextProps) {
 
         // Obtiene datos del país
         const countryInfo = getCountryData(code) as any;
-        const symbolLocal = countryInfo["signo-moneda"] || "$";
-        const currencyLocal = countryInfo.moneda || "USD";
+
+        const isPricesObject = typeof prices === "object";
+        const hasLocalPrice = isPricesObject && prices[code] !== undefined;
+
+        const symbolLocal = hasLocalPrice
+          ? countryInfo["signo-moneda"] || "$"
+          : "$";
+        const currencyLocal = hasLocalPrice
+          ? countryInfo.moneda || "USD"
+          : "USD";
 
         // Determina precio
-        const raw =
-          typeof prices === "object"
-            ? prices[code] ?? prices.US ?? 0
-            : prices;
+        const raw = isPricesObject
+          ? prices[code] ?? prices.US ?? 0
+          : prices;
         // Si raw es string lo parseamos, si no lo dejamos
         const num = typeof raw === "string" ? parseFloat(raw) : raw;
         // Aseguramos que siempre sea número
@@ -55,7 +62,7 @@ export default function CountryPriceText({ prices }: CountryPriceTextProps) {
       }
     }
     fetchAndSet();
-  }, []);
+  }, [prices]);
 
   if (priceValue === null) {
     return null;

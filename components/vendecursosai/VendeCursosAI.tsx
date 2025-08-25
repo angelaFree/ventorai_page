@@ -526,7 +526,7 @@ const handleComprar = async () => {
                 </span>
               </div>
 
-              <div className="overflow-hidden h-20 md:h-24">
+              <div className="overflow-hidden h-32 md:h-48">
                 <h1
                   className={`text-5xl md:text-7xl font-black mb-6 bg-gradient-to-r from-yellow-300 to-white bg-clip-text text-transparent leading-tight transition-transform duration-500 ${slideIn ? 'translate-y-0' : '-translate-y-full'}`}
                 >

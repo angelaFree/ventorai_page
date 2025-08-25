@@ -15,7 +15,7 @@ export default function FlyerIALanding() {
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
   const [currentFlyer, setCurrentFlyer] = useState(0);
   const linkPagoHotmart =
-    "https://pay.hotmart.com/B101507725R?checkoutMode=10";
+    "https://pay.hotmart.com/G100299066R?off=xhs7uuy4&checkoutMode=10";
 
   const flyersVertical: Flyer[] = [
     {
@@ -1466,7 +1466,11 @@ export default function FlyerIALanding() {
   }, [flyersSquareHeader.length]);
 
   const priceMap = {
-    US: 2.9,
+    US: 6.9,
+    PE: 27.0,
+    MX: 162.9,
+    CO: 29.73,
+    BO: 52.0,
   };
   return (
     <>

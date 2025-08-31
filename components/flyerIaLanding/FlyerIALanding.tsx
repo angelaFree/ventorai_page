@@ -17,398 +17,84 @@ export default function FlyerIALanding() {
   const linkPagoHotmart =
     "https://pay.hotmart.com/G100299066R?off=xhs7uuy4&checkoutMode=10";
 
-  const flyersVertical: Flyer[] = [
-    {
-      id: 1,
-      category: "General",
-      image:
-        "https://drive.google.com/thumbnail?id=14CLn_QHogDYJgHk9-D5FEIZH2NSJT40G&sz=w1000",
-    },
-    {
-      id: 2,
-      category: "General",
-      image:
-        "https://drive.google.com/thumbnail?id=1MpCIJNcu14BaqSBXveS0B3EnVMGRaM9I&sz=w1000",
-    },
-    {
-      id: 3,
-      category: "General",
-      image:
-        "https://drive.google.com/thumbnail?id=1MKNuOxcZbBTlOcRiUSkOuvj7-kUUBY2T&sz=w1000",
-    },
-    {
-      id: 4,
-      category: "General",
-      image:
-        "https://drive.google.com/thumbnail?id=1UTvtHfyICNsQVWYncmVZgJeEVwskmr_M&sz=w1000",
-    },
-    {
-      id: 5,
-      category: "General",
-      image:
-        "https://drive.google.com/thumbnail?id=1TbMdCIRlWy-mxL031oBeiSS7PcBbSEeH&sz=w1000",
-    },
-    {
-      id: 6,
-      category: "General",
-      image:
-        "https://drive.google.com/thumbnail?id=1xUVHkMssC1LiLtzFCsDmnov6TLzoVVE8&sz=w1000",
-    },
-    {
-      id: 7,
-      category: "General",
-      image:
-        "https://drive.google.com/thumbnail?id=1HHAbpxGRy_aVZ_RiB9bFZthcCeyPtl6t&sz=w1000",
-    },
-    {
-      id: 8,
-      category: "General",
-      image:
-        "https://drive.google.com/thumbnail?id=1xpJQgsnHDLZYPA5UYgSzTwOb2v9z8pBW&sz=w1000",
-    },
-    {
-      id: 9,
-      category: "General",
-      image:
-        "https://drive.google.com/thumbnail?id=1p3NyM3v9U3GHZIo9mojeYe1QtHoxS4BA&sz=w1000",
-    },
-    {
-      id: 10,
-      category: "General",
-      image:
-        "https://drive.google.com/thumbnail?id=1Q3FJx9p8s7hwnhdkaH1v_M1Fo-wxNLSn&sz=w1000",
-    },
-    {
-      id: 11,
-      category: "General",
-      image:
-        "https://drive.google.com/thumbnail?id=1kCGPcq2XBw8dH-H0MEaoMIOWFZnD1ohF&sz=w1000",
-    },
-    {
-      id: 12,
-      category: "General",
-      image:
-        "https://drive.google.com/thumbnail?id=1QvbTyYuByGfFsRaGOIqC-zjIIxkxAFM-&sz=w1000",
-    },
-    {
-      id: 13,
-      category: "General",
-      image:
-        "https://drive.google.com/thumbnail?id=1eSSRtcph59dwIXumwB1rzsmaRYhPNCj6&sz=w1000",
-    },
-    {
-      id: 14,
-      category: "General",
-      image:
-        "https://drive.google.com/thumbnail?id=1xK1-XWAirQn9rqR2a3fku7XjyuwXBCYr&sz=w1000",
-    },
-    {
-      id: 15,
-      category: "General",
-      image:
-        "https://drive.google.com/thumbnail?id=1LU1Ab8G1Y9iHwXwrJsfb1JRTyrk9yPIr&sz=w1000",
-    },
-    {
-      id: 16,
-      category: "General",
-      image:
-        "https://drive.google.com/thumbnail?id=1hcQr4Uv1-PstV0L49pwqETbUA9A6F1vQ&sz=w1000",
-    },
-    {
-      id: 17,
-      category: "General",
-      image:
-        "https://drive.google.com/thumbnail?id=14Lyd7kNaOxLyCgpRhD1TkXPQgwvt2-EM&sz=w1000",
-    },
-    {
-      id: 18,
-      category: "General",
-      image:
-        "https://drive.google.com/thumbnail?id=1Bp-jLHRxUsMqJGB1gnd2gSn8A0nd1TRf&sz=w1000",
-    },
-    {
-      id: 19,
-      category: "General",
-      image:
-        "https://drive.google.com/thumbnail?id=1o7GnKulvI1bDUlb2FGVE3rX7mYb5-_8t&sz=w1000",
-    },
-    {
-      id: 20,
-      category: "General",
-      image:
-        "https://drive.google.com/thumbnail?id=1rJmFj_bxeWSEbnwEMtV3dfESpjyjxY7z&sz=w1000",
-    },
-    {
-      id: 21,
-      category: "General",
-      image:
-        "https://drive.google.com/thumbnail?id=1QLl6RSxjwhCKac9KfOVI4-yXevetf8S8&sz=w1000",
-    },
-    {
-      id: 22,
-      category: "General",
-      image:
-        "https://drive.google.com/thumbnail?id=12HOXi3-Q_v6BFw2YhQSsMNaRBEVmwQCG&sz=w1000",
-    },
-    {
-      id: 23,
-      category: "General",
-      image:
-        "https://drive.google.com/thumbnail?id=1KKU0M47V9aXdj0Ecizz1WwSqCY6Iw0f5&sz=w1000",
-    },
-    {
-      id: 24,
-      category: "General",
-      image:
-        "https://drive.google.com/thumbnail?id=1CwmC4avVAtYFmzAsCq2GEPCXGfhseLjZ&sz=w1000",
-    },
-    {
-      id: 25,
-      category: "General",
-      image:
-        "https://drive.google.com/thumbnail?id=1xch5x-vO6vsdYq3EVgacIw17u9NU5TfU&sz=w1000",
-    },
-    {
-      id: 26,
-      category: "General",
-      image:
-        "https://drive.google.com/thumbnail?id=16_GY9-tvU6cnw0jp30-wtgzDzjRPz5Kv&sz=w1000",
-    },
-    {
-      id: 27,
-      category: "General",
-      image:
-        "https://drive.google.com/thumbnail?id=1uPUz2cDABVwy9qPfMAJd3mMZNgAw7Bvr&sz=w1000",
-    },
-    {
-      id: 28,
-      category: "General",
-      image:
-        "https://drive.google.com/thumbnail?id=1nC5TJRlMq25LaoDv3o8AyPjmU1e4vcJf&sz=w1000",
-    },
-    {
-      id: 29,
-      category: "General",
-      image:
-        "https://drive.google.com/thumbnail?id=14oNw2-P6P2V-Q8SKNuqsjPzQYWCkfnXi&sz=w1000",
-    },
-    {
-      id: 30,
-      category: "General",
-      image:
-        "https://drive.google.com/thumbnail?id=19RTkowIWRgkAEfk3EIZIGiXpzrYLpUvS&sz=w1000",
-    },
-    {
-      id: 31,
-      category: "General",
-      image:
-        "https://drive.google.com/thumbnail?id=1gtsGPcAwd352T38fU9_QvQMkO5zus__Y&sz=w1000",
-    },
-    {
-      id: 32,
-      category: "General",
-      image:
-        "https://drive.google.com/thumbnail?id=1m2caZNQXY4EihU7RQbSXoTeuelX-j86G&sz=w1000",
-    },
-    {
-      id: 33,
-      category: "General",
-      image:
-        "https://drive.google.com/thumbnail?id=1D5zeq6p_-4k7-nc7v9Z9MCMkm9g04kQy&sz=w1000",
-    },
-    {
-      id: 34,
-      category: "General",
-      image:
-        "https://drive.google.com/thumbnail?id=1067blT_fGZAgSvax0TtJZqOw2quT3M_h&sz=w1000",
-    },
-    {
-      id: 35,
-      category: "General",
-      image:
-        "https://drive.google.com/thumbnail?id=165xOD1o6jiEc7CPFgGdeUTWFwj4-mTOI&sz=w1000",
-    },
-    {
-      id: 36,
-      category: "General",
-      image:
-        "https://drive.google.com/thumbnail?id=15NNrgSfLdvI_E0qGc5VROovQ1pEnsX0s&sz=w1000",
-    },
-    {
-      id: 37,
-      category: "General",
-      image:
-        "https://drive.google.com/thumbnail?id=1X6BQsPgzb3ddo8y8h6IoitiL1Qz6d-t5&sz=w1000",
-    },
-    {
-      id: 38,
-      category: "General",
-      image:
-        "https://drive.google.com/thumbnail?id=1Xhdivs37LpOPM_cD-JkTc0aBpjJoD7Ug&sz=w1000",
-    },
-    {
-      id: 39,
-      category: "General",
-      image:
-        "https://drive.google.com/thumbnail?id=1-eECnIfV7vxu1vi9RbEfmsjRnafuVWKu&sz=w1000",
-    },
-    {
-      id: 40,
-      category: "General",
-      image:
-        "https://drive.google.com/thumbnail?id=15nWvD6sE4PVTUIhNpFqiyzUvvQtq81pM&sz=w1000",
-    },
-    {
-      id: 41,
-      category: "General",
-      image:
-        "https://drive.google.com/thumbnail?id=14IirpfZN-jTapkWu70WjMsA33em6LfmR&sz=w1000",
-    },
-    {
-      id: 42,
-      category: "General",
-      image:
-        "https://drive.google.com/thumbnail?id=1-ZC_UtNHeneOEWy1MDji0X1fub4p_pzW&sz=w1000",
-    },
-    {
-      id: 43,
-      category: "General",
-      image:
-        "https://drive.google.com/thumbnail?id=1SXJYQAcsSpezIyRswY2lPEYEo6ZFXOI6&sz=w1000",
-    },
-    {
-      id: 44,
-      category: "General",
-      image:
-        "https://drive.google.com/thumbnail?id=1JoRXgwqCy33lxIqRP1Vfnbqd6tKF-QDK&sz=w1000",
-    },
-    {
-      id: 45,
-      category: "General",
-      image:
-        "https://drive.google.com/thumbnail?id=1lGuLquU0zSt_4z04Vs9lYHyY2ur7tVoY&sz=w1000",
-    },
-    {
-      id: 46,
-      category: "General",
-      image:
-        "https://drive.google.com/thumbnail?id=1CMEsQ-4wRyCMAuXH2EDi6bNIrl859M55&sz=w1000",
-    },
-    {
-      id: 47,
-      category: "General",
-      image:
-        "https://drive.google.com/thumbnail?id=1mR0Z67F6KkY0dQ6EVbDACSROCw6dhmty&sz=w1000",
-    },
-    {
-      id: 48,
-      category: "General",
-      image:
-        "https://drive.google.com/thumbnail?id=1nuWAc2vmGz0wxRec8P2jNc96qC3tOOnU&sz=w1000",
-    },
-    {
-      id: 49,
-      category: "General",
-      image:
-        "https://drive.google.com/thumbnail?id=15DQvXKdpwzAV3KZY4VWJ6XH07ieBsIuw&sz=w1000",
-    },
-    {
-      id: 50,
-      category: "General",
-      image:
-        "https://drive.google.com/thumbnail?id=1wgXpfexRMWOjkUP6FxddpywyJg11VskK&sz=w1000",
-    },
-    {
-      id: 51,
-      category: "General",
-      image:
-        "https://drive.google.com/thumbnail?id=1vhv9m6_a9K9_HRPV2KJDmPlBFeaSjNWZ&sz=w1000",
-    },
-    {
-      id: 52,
-      category: "General",
-      image:
-        "https://drive.google.com/thumbnail?id=1CYl33azB_4I9lBubVOk1mZRpEacs8w7v&sz=w1000",
-    },
-    {
-      id: 53,
-      category: "General",
-      image:
-        "https://drive.google.com/thumbnail?id=1j5-mqDkM1S9Udf6ioLOn8DSHqFnLNRgz&sz=w1000",
-    },
-    {
-      id: 54,
-      category: "General",
-      image:
-        "https://drive.google.com/thumbnail?id=1B5hXeCYYp6WiyuR4Oui_083aMW6XqESB&sz=w1000",
-    },
-    {
-      id: 55,
-      category: "General",
-      image:
-        "https://drive.google.com/thumbnail?id=16C15zZhYe2OFTYAjrMwVj7sjyf29Vigg&sz=w1000",
-    },
-    {
-      id: 56,
-      category: "General",
-      image:
-        "https://drive.google.com/thumbnail?id=1AkJYbmvG0x4OeLbtawU-n2sx0OqK0zjk&sz=w1000",
-    },
-    {
-      id: 57,
-      category: "General",
-      image:
-        "https://drive.google.com/thumbnail?id=1afseuk9zaUl2KcOBq9pop5wsCXg1uv9j&sz=w1000",
-    },
-    {
-      id: 58,
-      category: "General",
-      image:
-        "https://drive.google.com/thumbnail?id=1-7hz9JjhfZbBm4FBWl7nsRb_IXgzSPA0&sz=w1000",
-    },
-    {
-      id: 59,
-      category: "General",
-      image:
-        "https://drive.google.com/thumbnail?id=1uCOSckNY00_Ss9sehPIDMQGBjIG2DL-N&sz=w1000",
-    },
-    {
-      id: 60,
-      category: "General",
-      image:
-        "https://drive.google.com/thumbnail?id=1clBrWHkmPCcr3JA2fP4hBWZsQh78CvdA&sz=w1000",
-    },
-    {
-      id: 61,
-      category: "General",
-      image:
-        "https://drive.google.com/thumbnail?id=1LOj3Yulhap0UHCPbTkwu9ZRomARRJO6a&sz=w1000",
-    },
-    {
-      id: 62,
-      category: "General",
-      image:
-        "https://drive.google.com/thumbnail?id=1i7m1F81fKxg6UH5yuSbUohelZXX4pbz1&sz=w1000",
-    },
-    {
-      id: 63,
-      category: "General",
-      image:
-        "https://drive.google.com/thumbnail?id=1_fKzfcEBt8J3wPM_qjMZhuErjubsvmvx&sz=w1000",
-    },
-    {
-      id: 64,
-      category: "General",
-      image:
-        "https://drive.google.com/thumbnail?id=1j4OLLmmxPHE7uxh-bomxxJc9ZTm522QV&sz=w1000",
-    },
-    {
-      id: 65,
-      category: "General",
-      image:
-        "https://drive.google.com/thumbnail?id=1iD_2HnD_RjdDPauaIgdkNO2VRAIZUU1u&sz=w1000",
-    },
+  const handleComprar = async (url?: string) => {
+    const ReactPixel = (await import("react-facebook-pixel")).default;
+    ReactPixel.track("InitiateCheckout", {
+      
+    });
+    window.open(url ?? linkPagoHotmart, "_blank", "noopener,noreferrer");
+  };
+
+  // Reemplazo de enlaces externos por rutas locales en public/ventor
+  // Vertical: usa archivos existentes en public/ventor/vertical
+  const verticalFiles = [
+    "vertical images1.png",
+    "vertical images2.png",
+    "vertical images3.png",
+    "vertical images4.png",
+    "vertical images5.png",
+    "vertical images6.png",
+    "vertical images7.png",
+    "vertical images9.png",
+    "vertical images10.png",
+    "vertical images11.png",
+    "vertical images12.png",
+    "vertical images13.png",
+    "vertical images14.png",
+    "vertical images15.png",
+    "vertical images16.png",
+    "vertical images17.png",
+    "vertical images18.png",
+    "vertical images19.png",
+    "vertical images20.png",
+    "vertical images22.png",
+    "vertical images24.png",
+    "vertical images25.png",
+    "vertical images26.png",
+    "vertical images28.png",
+    "vertical images29.png",
+    "vertical images30.png",
+    "vertical images31.png",
+    "vertical images32.png",
+    "vertical images33.png",
+    "vertical images34.png",
+    "vertical images35.png",
+    "vertical images36.png",
+    "vertical images37.png",
+    "vertical images38.png",
+    "vertical images39.png",
+    "vertical images40.png",
+    "vertical images41.png",
+    "vertical images42.png",
+    "vertical images43.png",
+    "vertical images44.png",
+    "vertical images45.png",
+    "vertical images46.png",
+    "vertical images47.png",
+    "vertical images48.png",
+    "vertical images49.png",
+    "vertical images50.png",
+    "vertical images51.png",
+    "vertical images52.png",
+    "vertical images53.png",
+    "vertical images54.png",
+    "vertical images55.png",
+    "vertical images56.png",
+    "vertical images57.png",
+    "vertical images58.png",
+    "vertical images59.png",
+    "vertical images61.png",
+    "vertical images62.png",
+    "vertical images63.png",
+    "vertical images64.png",
+    "vertical images65.png",
   ];
+
+  const flyersVertical: Flyer[] = verticalFiles.map((file, idx) => ({
+    id: idx + 1,
+    category: "General",
+    image: `/ventor/vertical/${file}`,
+  }));
   const flyersSquare: Flyer[] = [
     {
       id: 1,
@@ -1431,13 +1117,114 @@ export default function FlyerIALanding() {
     return groups;
   }
 
+  // --- Definir versiones locales (cuadrado) desde public/ventor/cuadrado ---
+  const squareFiles = [
+    "imagenes cuadradas1.png",
+    "imagenes cuadradas2.png",
+    "imagenes cuadradas3.png",
+    "imagenes cuadradas4.png",
+    "imagenes cuadradas6.png",
+    "imagenes cuadradas8.png",
+    "imagenes cuadradas9.png",
+    "imagenes cuadradas11.png",
+    "imagenes cuadradas12.png",
+    "imagenes cuadradas13.png",
+    "imagenes cuadradas14.png",
+    "imagenes cuadradas15.png",
+    "imagenes cuadradas20.png",
+    "imagenes cuadradas21.png",
+    "imagenes cuadradas22.png",
+    "imagenes cuadradas24.png",
+    "imagenes cuadradas25.png",
+    "imagenes cuadradas26.png",
+    "imagenes cuadradas29.png",
+    "imagenes cuadradas30.png",
+    "imagenes cuadradas31.png",
+    "imagenes cuadradas32.png",
+    "imagenes cuadradas33.png",
+    "imagenes cuadradas35.png",
+    "imagenes cuadradas36.png",
+    "imagenes cuadradas37.png",
+    "imagenes cuadradas39.png",
+    "imagenes cuadradas40.png",
+    "imagenes cuadradas41.png",
+    "imagenes cuadradas42.png",
+    "imagenes cuadradas44.png",
+    "imagenes cuadradas45.png",
+    "imagenes cuadradas46.png",
+    "imagenes cuadradas47.png",
+    "imagenes cuadradas48.png",
+    "imagenes cuadradas50.png",
+    "imagenes cuadradas52.png",
+    "imagenes cuadradas53.png",
+    "imagenes cuadradas54.png",
+    "imagenes cuadradas55.png",
+    "imagenes cuadradas58.png",
+    "imagenes cuadradas60.png",
+    "imagenes cuadradas62.png",
+    "imagenes cuadradas63.png",
+    "imagenes cuadradas64.png",
+    "imagenes cuadradas66.png",
+    "imagenes cuadradas67.png",
+    "imagenes cuadradas70.png",
+    "imagenes cuadradas71.png",
+    "imagenes cuadradas73.png",
+    "imagenes cuadradas74.png",
+    "imagenes cuadradas75.png",
+    "imagenes cuadradas77.png",
+    "imagenes cuadradas78.png",
+    "imagenes cuadradas80.png",
+    "imagenes cuadradas81.png",
+    "imagenes cuadradas84.png",
+    "imagenes cuadradas85.png",
+    "imagenes cuadradas89.png",
+    "imagenes cuadradas91.png",
+    "imagenes cuadradas92.png",
+    "imagenes cuadradas94.png",
+    "imagenes cuadradas95.png",
+    "imagenes cuadradas96.png",
+    "imagenes cuadradas98.png",
+    "imagenes cuadradas99.png",
+    "imagenes cuadradas102.png",
+    "imagenes cuadradas105.png",
+    "imagenes cuadradas106.png",
+    "imagenes cuadradas107.png",
+    "imagenes cuadradas109.png",
+    "imagenes cuadradas111.png",
+    "imagenes cuadradas113.png",
+    "imagenes cuadradas114.png",
+    "imagenes cuadradas118.png",
+    "imagenes cuadradas120.png",
+    "imagenes cuadradas122.png",
+    "imagenes cuadradas123.png",
+    "imagenes cuadradas124.png",
+    "imagenes cuadradas125.png",
+    "imagenes cuadradas126.png",
+    "imagenes cuadradas132.png",
+    "imagenes cuadradas133.png",
+    "imagenes cuadradas134.png",
+    "imagenes cuadradas136.png",
+    "imagenes cuadradas137.png",
+    "imagenes cuadradas139.png",
+    "imagenes cuadradas141.png",
+    "imagenes cuadradas143.png",
+    "imagenes cuadradas145.png",
+    "imagenes cuadradas146.png",
+  ];
+  const flyersSquareLocal: Flyer[] = squareFiles.map((file, idx) => ({
+    id: idx + 1,
+    category: "General",
+    image: `/ventor/cuadrado/${file}`,
+  }));
+  const flyersSquareHeaderLocal: Flyer[] = flyersSquareLocal.slice(0, 16);
+
   // --- Agrupando flyersSquare en 4 bloques ---
   const [
     flyersSquareGroup1,
     flyersSquareGroup2,
     flyersSquareGroup3,
     flyersSquareGroup4,
-  ] = splitIntoGroups(flyersSquare, 4);
+  ] = splitIntoGroups(flyersSquareLocal, 4);
 
   // --- Agrupando flyersVertical en 4 bloques ---
   const [
@@ -1460,10 +1247,10 @@ export default function FlyerIALanding() {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentFlyer((prev) => (prev + 1) % flyersSquareHeader.length);
+      setCurrentFlyer((prev) => (prev + 1) % flyersSquareHeaderLocal.length);
     }, 2000);
     return () => clearInterval(interval);
-  }, [flyersSquareHeader.length]);
+  }, [flyersSquareHeaderLocal.length]);
 
   const priceMap = {
     US: 6.9,
@@ -1511,7 +1298,7 @@ export default function FlyerIALanding() {
         <HeroSection
           linkPagoHotmart={linkPagoHotmart}
           priceMap={priceMap}
-          flyersSquareHeader={flyersSquareHeader}
+          flyersSquareHeader={flyersSquareHeaderLocal}
           currentFlyer={currentFlyer}
         />
                 <CarouselFlyers flyers={flyersVerticalGroup1} itemType="vertical" />
@@ -1539,7 +1326,7 @@ export default function FlyerIALanding() {
         />
         <CarouselFlyers flyers={flyersVerticalGroup4} itemType="vertical" />
         <CarouselFlyers flyers={flyersSquareGroup4} itemType="square" />
-                <PlansSection />
+                <PlansSection onBuy={(url) => handleComprar(url)} />
 
 {/*         <PricingSection priceMap={priceMap} linkPagoHotmart={linkPagoHotmart} />
  */}

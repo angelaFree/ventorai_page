@@ -21,8 +21,8 @@ export const showcaseItems: ShowcaseItem[] = [
     id: "flyer",
     iconSrc: "/flyerai_avatar.png",
     iconGradient: "from-orange-400 to-pink-400",
-    name: "VendeCursos AI",
-    tagline: "Anuncios para Cursos Online",
+    name: "Anuncios AI",
+    tagline: "Anuncios para tus productos",
     taglineColor: "text-orange-500",
     badges: [
       { label: "BASIC", gradient: "from-orange-400 to-pink-400" },
@@ -33,8 +33,8 @@ export const showcaseItems: ShowcaseItem[] = [
     bulletColor: "text-orange-500",
     features: [
       "Genera anuncios a partir de tendencias virales",
-      "Plantillas nuevas cada semana",
-      "Optimiza cada pieza para vender cursos",
+      "Para cursos, ebooks, servicios, ecommerce, etc",
+      "Genera llamados a la acción y contenido de alta calidad",
     ],
     highlight: { text: "BASIC / PRO / PLUS", classes: "bg-yellow-400 text-black" },
     graphicSrc: "/flyerai_ejemplo.png",
@@ -53,7 +53,7 @@ export const showcaseItems: ShowcaseItem[] = [
     featureBg: "from-purple-500 to-blue-500",
     bulletColor: "text-purple-500",
     features: [
-      "Genera 5 títulos o enfoques ganadores",
+      "Mismo producto, diferentes títulos, nuevas ventas",
       "Analiza tu producto y audiencia",
       "Propone ganchos persuasivos",
     ],
@@ -75,8 +75,8 @@ export const showcaseItems: ShowcaseItem[] = [
     featureBg: "from-green-500 to-cyan-500",
     bulletColor: "text-green-500",
     features: [
-      "Genera copys listos para publicar",
-      "Utiliza técnicas de persuasión",
+      "Redacta copys",
+      "Unicode, métodos de pago y más",
       "Adapta el tono a cada red social",
     ],
     highlight: {
@@ -105,32 +105,11 @@ export const showcaseItems: ShowcaseItem[] = [
     graphicSrc: "/faceai_ejemplo.png",
   },
   {
-    id: "product",
-    iconSrc: "/productai_avatar.png",
-    iconGradient: "from-yellow-400 to-teal-400",
-    name: "Product AI",
-    tagline: "Anuncios de Productos Físicos",
-    taglineColor: "text-yellow-500",
-    badges: [
-      { label: "PRO", gradient: "from-pink-400 to-cyan-400" },
-      { label: "PLUS", gradient: "from-cyan-400 to-purple-400" },
-    ],
-    featureBg: "from-yellow-500 to-teal-500",
-    bulletColor: "text-yellow-500",
-    features: [
-      "Crea anuncios optimizados para ecommerce",
-      "Diseña flyers y banners para productos",
-      "Genera textos atractivos para vender",
-    ],
-    highlight: { text: "PRO / PLUS", classes: "bg-pink-400 text-white" },
-    graphicSrc: "/productai_ejemplo.png",
-  },
-  {
     id: "ebook",
     iconSrc: "/ebookai_avatar.png",
     iconGradient: "from-teal-400 to-indigo-400",
     name: "Ebook AI",
-    tagline: "Portadas y Promoción de Ebooks",
+    tagline: "Portadas y promoción de ebooks",
     taglineColor: "text-teal-500",
     badges: [
       { label: "PRO", gradient: "from-pink-400 to-cyan-400" },

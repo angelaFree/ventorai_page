@@ -15,13 +15,13 @@ export interface Plan {
 
 export const assistantsData: Record<string, Assistant> = {
   flyerAI: {
-    name: "VendeCursos AI",
+    name: "Anuncios AI",
     iconSrc: "/flyerai_avatar.png",
-    description: "Asistente para anuncios de cursos online",
+    description: "Asistente para anuncios de tus productos",
     features: [
-      "Genera anuncios listos para vender cursos",
-      "Actualiza diseños con plantillas semanales",
-      "Optimiza cada pieza para tu nicho educativo",
+      "Genera anuncios listos para vender tus productos",
+      "Para cursos, ebooks, servicios, productos y más",
+      "Optimiza cada pieza para tu nicho de mercado",
     ],
   },
   angulAI: {
@@ -30,7 +30,7 @@ export const assistantsData: Record<string, Assistant> = {
     description: "Asistente de Ángulos de Venta",
     features: [
       "Analiza tu producto o servicio",
-      "Genera 5 títulos o enfoques ganadores",
+      "Mismo producto, diferentes títulos, nuevas ventas",
       "Optimiza ganchos para tu audiencia",
     ],
   },
@@ -39,8 +39,8 @@ export const assistantsData: Record<string, Assistant> = {
     iconSrc: "/copyai_avatar.png",
     description: "Asistente Generador de Copys",
     features: [
-      "Redacta copys listos para publicar",
-      "Aplica técnicas de persuasión",
+      "Redacta copys",
+      "Unicode, métodos de pago y más",
       "Adapta el tono a cada red social",
     ],
   },
@@ -54,24 +54,14 @@ export const assistantsData: Record<string, Assistant> = {
       "Recomienda acciones de optimización",
     ],
   },
-  productAI: {
-    name: "Product AI",
-    iconSrc: "/productai_avatar.png",
-    description: "Asistente para anuncios de productos físicos",
-    features: [
-      "Crea flyers optimizados para ecommerce",
-      "Diseña banners para tiendas y catálogos",
-      "Genera textos atractivos para tus listados",
-    ],
-  },
   ebookAI: {
     name: "Ebook AI",
     iconSrc: "/ebookai_avatar.png",
     description:
-      "Dame el título de tu ebook y obtendrás portadas impactantes y contenido promocional",
+      "Asistente de portadas y mockups",
     features: [
-      "Genera portadas profesionales y llamativas",
-      "Obtén mockups de tu ebook al instante",
+      "Genera portadas",
+      "Obtén mockups",
       "Crea textos promocionales listos para publicar",
     ],
   },
@@ -126,7 +116,6 @@ export const plans: Record<string, Plan> = {
       assistantsData.angulAI,
       assistantsData.copyAI,
       assistantsData.ebookAI,
-      assistantsData.productAI,
     ],
     hotmartLink: "https://pay.hotmart.com/G100299066R?off=7cxi2ny6&checkoutMode=10",
   },
@@ -140,7 +129,6 @@ export const plans: Record<string, Plan> = {
       assistantsData.copyAI,
       assistantsData.faceAI,
       assistantsData.ebookAI,
-      assistantsData.productAI,
     ],
     hotmartLink: "https://pay.hotmart.com/G100299066R?off=8cq60olv&checkoutMode=10",
   },

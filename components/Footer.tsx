@@ -22,7 +22,7 @@ const social = [
     icon: <FaInstagram className="h-6 w-6" />,
   },
   {
-    href: "https://www.youtube.com/@ventorai", // Corregí el enlace de YouTube
+    href: "https://www.youtube.com/channel/UCrzAFqOWWnpU1uKBZnkIzOw", // Corregí el enlace de YouTube
     label: "YouTube",
     icon: <FaYoutube className="h-6 w-6" />,
   },

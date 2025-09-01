@@ -82,7 +82,11 @@ export default function AssistantCard({
           <ul className="space-y-2 text-white">
             {features.map((feat, idx) => (
               <li key={idx} className="flex items-start">
-                <span className={`${bulletColor} mr-2`}>•</span>
+                <span
+                  className={`${bulletColor} mr-2 mt-1 inline-flex items-center justify-center w-5 h-5 rounded-full bg-white shadow-sm font-bold`}
+                >
+                  ✓
+                </span>
                 {feat}
               </li>
             ))}
@@ -112,4 +116,3 @@ export default function AssistantCard({
     </div>
   );
 }
-

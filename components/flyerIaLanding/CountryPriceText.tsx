@@ -1,12 +1,30 @@
-import React, { useState, useEffect } from "react";
-import getCountryData from "@/utils/getCountryData";
+import React from "react";
 
 interface CountryPriceTextProps {
   prices: number | Record<string, number>;
 }
 
+// Modo USD únicamente: se comenta la lógica por país
+// para que siempre muestre el precio en dólares.
 export default function CountryPriceText({ prices }: CountryPriceTextProps) {
-  // Ahora “prices” ya no es any
+  const raw =
+    typeof prices === "object"
+      ? (prices as Record<string, number>).US ?? 0
+      : prices;
+
+  const num = typeof raw === "string" ? parseFloat(raw as string) : raw;
+  const val = Number(num) || 0;
+  const priceValue = val.toFixed(2);
+
+  return <span>${priceValue}</span>;
+}
+
+/*
+// Implementación original con detección de país (comentada a petición):
+import React, { useState, useEffect } from "react";
+import getCountryData from "@/utils/getCountryData";
+
+export default function CountryPriceTextOriginal({ prices }: CountryPriceTextProps) {
   const [priceValue, setPriceValue] = useState<string | null>(null);
   const [symbol, setSymbol] = useState<string>("$");
   const [currency, setCurrency] = useState<string>("USD");
@@ -23,12 +41,10 @@ export default function CountryPriceText({ prices }: CountryPriceTextProps) {
         }
 
         const code = countryCode || "US";
-
-        // Obtiene datos del país
         const countryInfo = getCountryData(code) as any;
 
         const isPricesObject = typeof prices === "object";
-        const hasLocalPrice = isPricesObject && prices[code] !== undefined;
+        const hasLocalPrice = isPricesObject && (prices as any)[code] !== undefined;
 
         const symbolLocal = hasLocalPrice
           ? countryInfo["signo-moneda"] || "$"
@@ -37,13 +53,10 @@ export default function CountryPriceText({ prices }: CountryPriceTextProps) {
           ? countryInfo.moneda || "USD"
           : "USD";
 
-        // Determina precio
         const raw = isPricesObject
-          ? prices[code] ?? prices.US ?? 0
-          : prices;
-        // Si raw es string lo parseamos, si no lo dejamos
+          ? (prices as any)[code] ?? (prices as any).US ?? 0
+          : prices as number;
         const num = typeof raw === "string" ? parseFloat(raw) : raw;
-        // Aseguramos que siempre sea número
         const val = Number(num) || 0;
 
         setPriceValue(val.toFixed(2));
@@ -51,11 +64,10 @@ export default function CountryPriceText({ prices }: CountryPriceTextProps) {
         setCurrency(currencyLocal);
       } catch (error) {
         console.error("Error fetching country or price:", error);
-        // Fallback en caso de error
         setPriceValue(
           typeof prices === "number"
             ? prices.toFixed(2)
-            : prices.US?.toFixed(2) || "0.00"
+            : (prices as any).US?.toFixed(2) || "0.00"
         );
         setSymbol("$");
         setCurrency("USD");
@@ -64,10 +76,7 @@ export default function CountryPriceText({ prices }: CountryPriceTextProps) {
     fetchAndSet();
   }, [prices]);
 
-  if (priceValue === null) {
-    return null;
-  }
-
+  if (priceValue === null) return null;
   return (
     <span>
       {symbol}
@@ -75,4 +84,4 @@ export default function CountryPriceText({ prices }: CountryPriceTextProps) {
     </span>
   );
 }
-
+*/

@@ -68,7 +68,7 @@ export const assistantsData: Record<string, Assistant> = {
 };
 
 const basePriceMap = {
-  US: 4.9,
+  US: 6.9,
   PE: 19.17,
   MX: 115.7,
   CO: 21.12,
@@ -76,7 +76,7 @@ const basePriceMap = {
 };
 
 const proPriceMap = {
-  US: 6.32,
+  US: 8.9,
   PE: 24.73,
   MX: 149.19,
   CO: 27.23,
@@ -84,7 +84,7 @@ const proPriceMap = {
 };
 
 const plusPriceMap = {
-  US: 8.45,
+  US: 11.9,
   PE: 33.04,
   MX: 199.43,
   CO: 36.44,

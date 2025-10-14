@@ -7,17 +7,17 @@ import CarouselFlyers, { Flyer } from "../flyerIaLanding/CarouselFlyers";
 import EspecificacionesTecnicas from "./Especificaciones";
 
 
-export default function VendeCursosAI() {
+export default function AdsAgentAI() {
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
   const [currentFlyer, setCurrentFlyer] = useState(0);
   const [isVariantA, setIsVariantA] = useState<boolean | null>(null);
 
   const heroTitles = [
-    "Vende tus productos todos los días",
-    "Anuncios listos en segundos",
-    "Convierte comunidad en ventas",
-    "Tu curso siempre visible",
-    "Contenido diario sin esfuerzo",
+    "Anuncios que convierten todos los días",
+    "Campañas listas en segundos",
+    "Convierte tráfico en clientes",
+    "Tu marca siempre visible",
+    "Creativos diarios sin esfuerzo",
   ];
   const [titleIndex, setTitleIndex] = useState(0);
   const [slideIn, setSlideIn] = useState(true);
@@ -42,7 +42,7 @@ export default function VendeCursosAI() {
     };
   }, [heroTitles.length]);
   const linkPagoHotmart =
-    "https://pay.hotmart.com/B101507725R?checkoutMode=10";
+    "https://pay.hotmart.com/O102414984N";
 
   const flyersVertical: Flyer[] = [
     {
@@ -258,21 +258,21 @@ export default function VendeCursosAI() {
 
   const testimonials = [
     {
-      text: "Llevo 30 minutos de compra y ya tengo tres diseños listos para Instagram, LinkedIn y Facebook.",
+      text: "Treinta minutos después de comprar ya tenía anuncios listos para Instagram, LinkedIn y Facebook.",
       author: "María González",
       role: "Marketing Manager",
       rating: 5,
       avatar: "/avatar_maria.png",
     },
     {
-      text: "Increíble cómo VendeCursos AI captura las tendencias virales. Mis conversiones subieron 300%.",
+      text: "AdsAgent AI detecta las tendencias virales de mi nicho. Bajé el CPA un 60% en la primera semana.",
       author: "Carlos Ruiz",
       role: "E-commerce Owner",
       rating: 5,
       avatar: "/avatar_carlos.png",
     },
     {
-      text: "Adiós Canva, adiós diseñadores caros. VendeCursos AI es todo lo que necesito.",
+      text: "Adiós plantillas genéricas y diseñadores caros. AdsAgent AI es todo lo que necesito para mis campañas.",
       author: "Ana Martínez",
       role: "Social Media Specialist",
       rating: 5,
@@ -472,7 +472,7 @@ const handleComprar = async () => {
 
   
   const priceMap = {
-    US: 2.9
+    US: 4.9
   };
   return (
     <>
@@ -531,9 +531,9 @@ const handleComprar = async () => {
               </div>
 
               <p className="text-xl md:text-2xl mb-8 text-cyan-100 max-w-3xl mx-auto leading-relaxed">
-                Asistente generador de anuncios para cursos online. Olvídate de
-                Canva y diseñadores: en segundos tendrás flyers listos para
-                vender.
+                Asistente generador de anuncios con Inteligencia Artificial.
+                Olvídate de Canva y diseñadores: en segundos tendrás creativos
+                listos para lanzar tus campañas.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
@@ -544,8 +544,7 @@ const handleComprar = async () => {
                 >
                   <RocketIcon />
                   <span className="ml-3">
-                    Comprar por <CountryPriceText prices={priceMap} />
-                    <span className="text-sm align-top">/mes</span>
+                    Compra única de <CountryPriceText prices={priceMap} />
                   </span>
                 </button>
 
@@ -605,11 +604,11 @@ const handleComprar = async () => {
                         <TargetIcon />
                       </div>
                       <h3 className="text-2xl font-bold text-gray-800 mb-4">
-                        Para Cualquier Curso
+                        Para Cualquier Industria
                       </h3>
                       <p className="text-gray-600 leading-relaxed">
-                        Cursos de cualquier temática, optimizados para todas las
-                        redes sociales.
+                        Creativos para ecommerce, servicios, infoproductos y
+                        franquicias, optimizados para todas las redes sociales.
                       </p>
                     </div>
                   </div>
@@ -625,10 +624,11 @@ const handleComprar = async () => {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
               <h2 className="text-4xl md:text-5xl font-black text-white mb-8">
-                VendeCursos AI en Acción
+                Anuncios AI en Acción
               </h2>
               <p className="text-xl text-purple-100 mb-12">
-                Descubre cómo crear flyers virales en menos de 30 segundos
+                Mira cómo lanzar creativos listos para conversión en menos de 30
+                segundos.
               </p>
 
               <div className="relative mx-auto max-w-sm">
@@ -637,7 +637,7 @@ const handleComprar = async () => {
                   <iframe
                     className="w-full h-full"
                     src="https://www.youtube.com/embed/QKP4AYBVMjQ?rel=0"
-                    title="Vídeo VendeCursos AI"
+                    title="AdsAgent AI en acción"
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
@@ -675,7 +675,7 @@ const handleComprar = async () => {
                   Te comunicas con GPT
                 </h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Le dices a GPT qué necesita tu curso.
+                  Le dices a GPT qué necesita tu campaña.
                 </p>
               </div>
 
@@ -786,11 +786,11 @@ const handleComprar = async () => {
                   </p>
                 </div>
 
-                {/* Lado derecho: VendeCursos AI (Recomendado) */}
+                {/* Lado derecho: AdsAgent AI (Recomendado) */}
                 <div className="text-center">
                   <div className="inline-flex items-center gap-2 mb-3">
                     <span className="rounded-full bg-emerald-400/20 text-emerald-50 text-xs font-semibold px-3 py-1 ring-1 ring-emerald-300/30">
-                      VendeCursos AI
+                      AdsAgent AI
                     </span>
                     <span className="rounded-full bg-white/10 text-white/90 text-xs px-3 py-1 ring-1 ring-white/20">
                       Recomendado
@@ -800,7 +800,7 @@ const handleComprar = async () => {
                   <div className="relative mx-auto rounded-xl overflow-hidden ring-1 ring-white/20 shadow-2xl shadow-black/30 max-w-[420px]">
                     <Image
                       src="/vendecursos/anuncio_asistant.png"
-                      alt="Anuncio optimizado con VendeCursos AI"
+                      alt="Anuncio optimizado con AdsAgent AI"
                       width={420}
                       height={560}
                       className="w-full h-auto object-cover"
@@ -976,9 +976,6 @@ const handleComprar = async () => {
                   <div className="text-center md:text-left">
                     <div className="text-5xl md:text-6xl font-black mb-3">
                       <CountryPriceText prices={priceMap} />
-                      <span className="ml-1 align-baseline text-base md:text-xl font-semibold opacity-70">
-                        /mes
-                      </span>
                     </div>
 
                     <div className="text-base md:text-lg text-white/90 mb-2">
@@ -987,8 +984,11 @@ const handleComprar = async () => {
                       </span>
                       antes
                     </div>
+                    <div className="text-base md:text-lg text-white/90 mb-2">
+                      Pago único, acceso ilimitado
+                    </div>
                     <div className="text-base md:text-lg text-white/90 mb-8">
-                      precio promocional por oferta
+                      Precio promocional por oferta
                     </div>
 
                     <button
@@ -1001,7 +1001,7 @@ const handleComprar = async () => {
                     </button>
 
                     <p className="text-sm text-white/80 mt-4">
-                      Cancela cuando quieras • Sin compromisos
+                      Acceso de por vida • Actualizaciones incluidas
                     </p>
                   </div>
                 </div>
@@ -1029,8 +1029,7 @@ const handleComprar = async () => {
             onClick={handleComprar}
             className="bg-gradient-to-r from-orange-500 to-pink-500 hover:from-orange-600 hover:to-pink-600 text-white font-bold px-8 py-4 rounded-full shadow-2xl animate-pulse"
           >
-            Comprar por <CountryPriceText prices={priceMap} />
-            <span className="text-sm align-top">/mes</span>
+            Compra única de <CountryPriceText prices={priceMap} />
           </button>
         </div>
       </div>

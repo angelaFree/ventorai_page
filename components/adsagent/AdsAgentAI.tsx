@@ -42,7 +42,7 @@ export default function AdsAgentAI() {
     };
   }, [heroTitles.length]);
   const linkPagoHotmart =
-    "https://pay.hotmart.com/O102414984N";
+    "https://pay.hotmart.com/O102414984N?checkoutMode=10";
 
   const flyersVertical: Flyer[] = [
     {

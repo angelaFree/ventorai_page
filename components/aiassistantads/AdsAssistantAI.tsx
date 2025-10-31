@@ -616,7 +616,7 @@ const handlePurchase = async () => {
         <CarouselFlyers flyers={flyersVerticalGroup1} itemType="vertical" />
 
         {/* Video Section */}
-        {/* <section className="py-16 bg-gradient-to-r from-purple-600 via-pink-600 to-orange-600">
+        <section className="py-16 bg-gradient-to-r from-purple-600 via-pink-600 to-orange-600">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
               <h2 className="text-4xl md:text-5xl font-black text-white mb-8">
@@ -631,7 +631,7 @@ const handlePurchase = async () => {
                 <div className="aspect-[9/16] bg-black rounded-3xl overflow-hidden shadow-2xl relative z-10">
                   <iframe
                     className="w-full h-full"
-                    src="https://www.youtube.com/embed/QKP4AYBVMjQ?rel=0"
+                    src="https://www.youtube.com/embed/DrcE8tyXP6Y?rel=0"
                     title="AI Assistant Ads in action"
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -642,7 +642,7 @@ const handlePurchase = async () => {
               </div>
             </div>
           </div>
-        </section> */}
+        </section> 
 
         {isVariantA && (
           <>

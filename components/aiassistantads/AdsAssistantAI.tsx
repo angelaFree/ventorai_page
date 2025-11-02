@@ -49,67 +49,67 @@ export default function AdsAssistantAI() {
       id: 1,
       category: "General",
       image:
-        "/vendecursos/carrusel_vertical_1/1.png",
+        "/anunciosIa_english/carrusel_vertical_english/1.png",
     },
     {
       id: 2,
       category: "General",
       image:
-        "/vendecursos/carrusel_vertical_1/2.png",
+        "/anunciosIa_english/carrusel_vertical_english/2.png",
     },
     {
       id: 3,
       category: "General",
       image:
-        "/vendecursos/carrusel_vertical_1/3.png",
+        "/anunciosIa_english/carrusel_vertical_english/3.png",
     },
     {
       id: 4,
       category: "General",
       image:
-        "/vendecursos/carrusel_vertical_1/4.png",
+        "/anunciosIa_english/carrusel_vertical_english/4.png",
     },
     {
       id: 5,
       category: "General",
       image:
-        "/vendecursos/carrusel_vertical_1/5.png",
+        "/anunciosIa_english/carrusel_vertical_english/5.png",
     },
     {
       id: 6,
       category: "General",
       image:
-        "/vendecursos/carrusel_vertical_1/6.png",
+        "/anunciosIa_english/carrusel_vertical_english/6.png",
     },
     {
       id: 7,
       category: "General",
       image:
-        "/vendecursos/carrusel_vertical_1/7.png",
+        "/anunciosIa_english/carrusel_vertical_english/7.png",
     },
     {
       id: 8,
       category: "General",
       image:
-        "/vendecursos/carrusel_vertical_1/8.png",
+        "/anunciosIa_english/carrusel_vertical_english/8.png",
     },
     {
       id: 9,
       category: "General",
       image:
-        "/vendecursos/carrusel_vertical_1/9.png",
+        "/anunciosIa_english/carrusel_vertical_english/9.png",
     },
     {
       id: 10,
       category: "General",
       image:
-        "/vendecursos/carrusel_vertical_1/10.png",
+        "/anunciosIa_english/carrusel_vertical_english/10.png",
     },
     {
       id: 11,
       category: "General",
       image:
-        "/vendecursos/carrusel_vertical_1/11.png",
+        "/anunciosIa_english/carrusel_vertical_english/11.png",
     }
     
   ];
@@ -118,139 +118,139 @@ export default function AdsAssistantAI() {
       id: 1,
       category: "General",
       image:
-        "/vendecursos/carrusel_cuadrado_1/1.png",
+        "/anunciosIa_english/carrusel_cuadrado_english/1.png",
     },
     {
       id: 2,
       category: "General",
       image:
-        "/vendecursos/carrusel_cuadrado_1/2.png",
+        "/anunciosIa_english/carrusel_cuadrado_english/2.png",
     },
     {
       id: 3,
       category: "General",
       image:
-        "/vendecursos/carrusel_cuadrado_1/3.png",
+        "/anunciosIa_english/carrusel_cuadrado_english/3.png",
     },
     {
       id: 4,
       category: "General",
       image:
-        "/vendecursos/carrusel_cuadrado_1/4.png",
+        "/anunciosIa_english/carrusel_cuadrado_english/4.png",
     },
     {
       id: 5,
       category: "General",
       image:
-        "/vendecursos/carrusel_cuadrado_1/5.png",
+        "/anunciosIa_english/carrusel_cuadrado_english/5.png",
     },
     {
       id: 6,
       category: "General",
       image:
-        "/vendecursos/carrusel_cuadrado_1/6.png",
+        "/anunciosIa_english/carrusel_cuadrado_english/6.png",
     },
     {
       id: 7,
       category: "General",
       image:
-        "/vendecursos/carrusel_cuadrado_1/7.png",
+        "/anunciosIa_english/carrusel_cuadrado_english/7.png",
     },
     {
       id: 8,
       category: "General",
       image:
-        "/vendecursos/carrusel_cuadrado_1/8.png",
+        "/anunciosIa_english/carrusel_cuadrado_english/8.png",
     },
     {
       id: 9,
       category: "General",
       image:
-        "/vendecursos/carrusel_cuadrado_1/9.png",
+        "/anunciosIa_english/carrusel_cuadrado_english/9.png",
     },
     {
       id: 10,
       category: "General",
       image:
-        "/vendecursos/carrusel_cuadrado_1/10.png",
+        "/anunciosIa_english/carrusel_cuadrado_english/10.png",
     },
     {
       id: 11,
       category: "General",
       image:
-        "/vendecursos/carrusel_cuadrado_1/11.png",
+        "/anunciosIa_english/carrusel_cuadrado_english/11.png",
     },
     {
       id: 12,
       category: "General",
       image:
-        "/vendecursos/carrusel_cuadrado_1/12.png",
+        "/anunciosIa_english/carrusel_cuadrado_english/12.png",
     },
     {
       id: 13,
       category: "General",
       image:
-        "/vendecursos/carrusel_cuadrado_1/13.png",
+        "/anunciosIa_english/carrusel_cuadrado_english/13.png",
     },
     {
       id: 14,
       category: "General",
       image:
-        "/vendecursos/carrusel_cuadrado_1/14.png",
+        "/anunciosIa_english/carrusel_cuadrado_english/14.png",
     },
     {
       id: 15,
       category: "General",
       image:
-        "/vendecursos/carrusel_cuadrado_1/15.png",
+        "/anunciosIa_english/carrusel_cuadrado_english/15.png",
     },
     {
       id: 16,
       category: "General",
       image:
-        "/vendecursos/carrusel_cuadrado_1/16.png",
+        "/anunciosIa_english/carrusel_cuadrado_english/16.png",
     },
     {
       id: 17,
       category: "General",
       image:
-        "/vendecursos/carrusel_cuadrado_1/17.png",
+        "/anunciosIa_english/carrusel_cuadrado_english/17.png",
     },
     {
       id: 18,
       category: "General",
       image:
-        "/vendecursos/carrusel_cuadrado_1/18.png",
+        "/anunciosIa_english/carrusel_cuadrado_english/18.png",
     },
     {
       id: 19,
       category: "General",
       image:
-        "/vendecursos/carrusel_cuadrado_1/19.png",
+        "/anunciosIa_english/carrusel_cuadrado_english/19.png",
     },
     {
       id: 20,
       category: "General",
       image:
-        "/vendecursos/carrusel_cuadrado_1/20.png",
+        "/anunciosIa_english/carrusel_cuadrado_english/20.png",
     },
     {
       id: 21,
       category: "General",
       image:
-        "/vendecursos/carrusel_cuadrado_1/21.png",
+        "/anunciosIa_english/carrusel_cuadrado_english/21.png",
     },
     {
       id: 22,
       category: "General",
       image:
-        "/vendecursos/carrusel_cuadrado_1/22.png",
+        "/anunciosIa_english/carrusel_cuadrado_english/22.png",
     },
     {
       id: 23,
       category: "General",
       image:
-        "/vendecursos/carrusel_cuadrado_1/23.png",
+        "/anunciosIa_english/carrusel_cuadrado_english/23.png",
     }
    
   ];
@@ -737,7 +737,7 @@ const handlePurchase = async () => {
 
                   <div className="relative mx-auto rounded-xl overflow-hidden ring-1 ring-white/20 shadow-2xl shadow-black/30 max-w-[420px]">
                     <Image
-                      src="/vendecursos/anuncio_gpt_normal.png"
+                      src="/anunciosIa_english/anuncio_gpt_normal_english.png"
                       alt="Result with default GPT"
                       width={420}
                       height={560}
@@ -791,7 +791,7 @@ const handlePurchase = async () => {
 
                   <div className="relative mx-auto rounded-xl overflow-hidden ring-1 ring-white/20 shadow-2xl shadow-black/30 max-w-[420px]">
                     <Image
-                      src="/vendecursos/anuncio_asistant.png"
+                      src="/anunciosIa_english/anuncio_asistant_english.png"
                       alt="Optimized ad with AI Assistant Ads"
                       width={420}
                       height={560}
